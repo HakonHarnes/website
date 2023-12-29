@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+import "./globals.css";
+
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex place-items-center justify-center">
-      Website coming soon!
+    <div className="h-screen">
+      <Header />
     </div>
   );
 }
