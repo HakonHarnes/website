@@ -6,7 +6,7 @@ import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="mt-6 flex items-center justify-center text-sm font-semibold sm:justify-between lg:mt-8">
+    <div className="mt-6 flex items-center justify-center  font-semibold sm:justify-between lg:mt-8">
       <ul className="hidden sm:block">
         <li>
           <InternalLink href="/">
@@ -14,8 +14,8 @@ export default function Header() {
           </InternalLink>
         </li>
       </ul>
-      <div className="flex w-full justify-between gap-8 sm:w-auto">
-        <ul className="flex w-full items-center justify-between gap-5 mobile:w-auto xxs:gap-8 sm:gap-10 sm:border-r sm:border-r-slate-600 sm:pr-8">
+      <div className="flex w-full justify-between xxs:gap-8 sm:w-auto">
+        <ul className="flex w-full items-center justify-between gap-4 mobile:w-auto xxs:gap-8 sm:gap-10 sm:border-r sm:border-r-slate-600 sm:pr-8">
           <li>
             <InternalLink href="/">About</InternalLink>
           </li>
