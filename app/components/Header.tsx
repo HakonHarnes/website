@@ -6,16 +6,16 @@ import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="mt-6 flex items-center justify-between text-sm font-semibold lg:mt-8 ">
-      <ul>
+    <div className="mt-6 flex items-center justify-center text-sm font-semibold sm:justify-between lg:mt-8">
+      <ul className="hidden sm:block">
         <li>
           <InternalLink href="/">
             <NameIcon />
           </InternalLink>
         </li>
       </ul>
-      <div className="flex gap-8">
-        <ul className="flex items-center gap-10 border-r border-r-slate-600 pr-8">
+      <div className="flex w-full justify-between gap-8 sm:w-auto">
+        <ul className="flex w-full items-center justify-between gap-5 mobile:w-auto xxs:gap-8 sm:gap-10 sm:border-r sm:border-r-slate-600 sm:pr-8">
           <li>
             <InternalLink href="/">About</InternalLink>
           </li>
@@ -26,7 +26,7 @@ export default function Header() {
             <InternalLink href="/">Experience</InternalLink>
           </li>
         </ul>
-        <ul className="flex items-center gap-5">
+        <ul className="hidden gap-4 mobile:flex mobile:items-center mobile:justify-center sm:gap-5">
           <li>
             <ExternalLink href="https://www.linkedin.com/in/hakon-harnes/">
               <LinkedInIcon />
