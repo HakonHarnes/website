@@ -2,15 +2,20 @@ import Link from "next/link";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import EmailIcon from "./icons/EmailIcon";
+import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="mt-6 lg:mt-8 flex items-center justify-center font-semibold text-sm ">
+    <div className="mt-6 flex items-center justify-between text-sm font-semibold lg:mt-8 ">
+      <ul>
+        <li>
+          <InternalLink href="/">
+            <NameIcon />
+          </InternalLink>
+        </li>
+      </ul>
       <div className="flex gap-8">
         <ul className="flex items-center gap-10 border-r border-r-slate-600 pr-8">
-          <li>
-            <InternalLink href="/">Home</InternalLink>
-          </li>
           <li>
             <InternalLink href="/">About</InternalLink>
           </li>
@@ -19,9 +24,6 @@ export default function Header() {
           </li>
           <li>
             <InternalLink href="/">Experience</InternalLink>
-          </li>
-          <li>
-            <InternalLink href="/">Contact</InternalLink>
           </li>
         </ul>
         <ul className="flex items-center gap-5">
@@ -56,7 +58,7 @@ function InternalLink({
   return (
     <Link
       href={href}
-      className="fill-white hover:text-sky-500 hover:fill-sky-500 dark:hover:text-sky-400 dark:hover:fill-sky-400"
+      className="fill-white hover:fill-sky-500 hover:text-sky-500 dark:hover:fill-sky-400 dark:hover:text-sky-400"
     >
       {children}
     </Link>
@@ -77,7 +79,7 @@ function ExternalLink({
       href={href}
       target={newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
-      className="fill-white stroke-white hover:text-sky-500 hover:fill-sky-500 hover:stroke-sky-500 dark:hover:text-sky-400 dark:hover:fill-sky-400 dark:hover:stroke-sky-400"
+      className="fill-white stroke-white hover:fill-sky-500 hover:stroke-sky-500 hover:text-sky-500 dark:hover:fill-sky-400 dark:hover:stroke-sky-400 dark:hover:text-sky-400"
     >
       {children}
     </a>
