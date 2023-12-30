@@ -2,50 +2,46 @@ import Link from "next/link";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GitHubIcon from "./icons/GitHubIcon";
 import EmailIcon from "./icons/EmailIcon";
-import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="pt-6 lg:pt-8 flex items-center justify-between font-semibold text-sm">
-      <ul className="flex items-center gap-4">
-        <li>
-          <InternalLink href="/">
-            <NameIcon />
-          </InternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://www.linkedin.com/in/hakon-harnes/">
-            <LinkedInIcon />
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="https://www.github.com/hakonharnes">
-            <GitHubIcon />
-          </ExternalLink>
-        </li>
-        <li>
-          <ExternalLink href="mailto:hakon@harnes.co" newTab={false}>
-            <EmailIcon />
-          </ExternalLink>
-        </li>
-      </ul>
-      <ul className="flex items-center gap-10">
-        <li>
-          <InternalLink href="/">Home</InternalLink>
-        </li>
-        <li>
-          <InternalLink href="/">About</InternalLink>
-        </li>
-        <li>
-          <InternalLink href="/">Projects</InternalLink>
-        </li>
-        <li>
-          <InternalLink href="/">Experience</InternalLink>
-        </li>
-        <li>
-          <InternalLink href="/">Contact</InternalLink>
-        </li>
-      </ul>
+    <div className="mt-6 lg:mt-8 flex items-center justify-center font-semibold text-sm ">
+      <div className="flex gap-8">
+        <ul className="flex items-center gap-10 border-r border-r-slate-600 pr-8">
+          <li>
+            <InternalLink href="/">Home</InternalLink>
+          </li>
+          <li>
+            <InternalLink href="/">About</InternalLink>
+          </li>
+          <li>
+            <InternalLink href="/">Projects</InternalLink>
+          </li>
+          <li>
+            <InternalLink href="/">Experience</InternalLink>
+          </li>
+          <li>
+            <InternalLink href="/">Contact</InternalLink>
+          </li>
+        </ul>
+        <ul className="flex items-center gap-5">
+          <li>
+            <ExternalLink href="https://www.linkedin.com/in/hakon-harnes/">
+              <LinkedInIcon />
+            </ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href="https://www.github.com/hakonharnes">
+              <GitHubIcon />
+            </ExternalLink>
+          </li>
+          <li>
+            <ExternalLink href="mailto:hakon@harnes.co" newTab={false}>
+              <EmailIcon />
+            </ExternalLink>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
