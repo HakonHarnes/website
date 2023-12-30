@@ -58,7 +58,7 @@ function InternalLink({
   return (
     <Link
       href={href}
-      className="fill-white hover:fill-sky-500 hover:text-sky-500 dark:hover:fill-sky-400 dark:hover:text-sky-400"
+      className="fill-white hover:fill-sky-400 hover:text-sky-400"
     >
       {children}
     </Link>
@@ -79,7 +79,7 @@ function ExternalLink({
       href={href}
       target={newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
-      className="fill-white stroke-white hover:fill-sky-500 hover:stroke-sky-500 hover:text-sky-500 dark:hover:fill-sky-400 dark:hover:stroke-sky-400 dark:hover:text-sky-400"
+      className="fill-white stroke-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400 "
     >
       {children}
     </a>
