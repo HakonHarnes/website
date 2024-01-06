@@ -15,7 +15,7 @@ export default function Hero() {
       {/*   never going to believe. */}
       {/* </p> */}
       <div className="flex gap-5 pt-4">
-        <Button href="/">Contact me</Button>
+        <Button href="mailto:hakon@harnes.co">Contact me</Button>
         <Button href="/" color="white">
           Resume
         </Button>
