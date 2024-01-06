@@ -14,7 +14,7 @@ function buttonColorClasses(color: ButtonColors) {
 
   switch (color) {
     case "white":
-      return `${baseClasses} bg-white hover:bg-yellow-400 text-black`;
+      return `${baseClasses} bg-white hover:bg-gray-300 text-black`;
     case "sky":
     default:
       return `${baseClasses} bg-sky-500 hover:bg-sky-400 text-white`;

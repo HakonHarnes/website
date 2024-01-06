@@ -9,12 +9,12 @@ export default function Hero() {
       <h2 className="text-3xl font-medium tracking-tight dark:text-white sm:text-4xl lg:text-5xl">
         [<span className="text-sky-400">developer</span>]
       </h2>
-      <p className="mx-auto my-6 max-w-3xl text-justify text-lg text-slate-200 ">
-        I’ve written a few thousand words on why traditional “semantic class
-        names” are the reason CSS is hard to maintain, but the truth is you’re
-        never going to believe.
-      </p>
-      <div className="flex gap-5">
+      {/* <p className="mx-auto my-6 max-w-3xl text-justify text-lg text-slate-200 "> */}
+      {/*   I’ve written a few thousand words on why traditional “semantic class */}
+      {/*   names” are the reason CSS is hard to maintain, but the truth is you’re */}
+      {/*   never going to believe. */}
+      {/* </p> */}
+      <div className="flex gap-5 pt-4">
         <Button href="/">Contact me</Button>
         <Button href="/" color="white">
           Resume
