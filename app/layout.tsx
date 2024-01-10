@@ -1,3 +1,5 @@
+import Header from "./components/Header";
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -18,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-slate-900`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 text-white">
+          <Header />
           {children}
         </div>
       </body>
