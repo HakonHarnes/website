@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { Roboto_Mono } from "next/font/google";
 
-const roboto = Roboto_Mono();
+const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
@@ -20,8 +20,7 @@ function AboutMe() {
       </h1>
       <p className="text-justify text-xl text-slate-400 leading-6 md:max-w-md">
         I&apos;m a <span className="text-sky-400 font-semibold">developer</span>{" "}
-        developer from Norway. I am a student at the Norwegian University of
-        Science and Technology. At the moment, I am studying.
+        developer from Norway.
       </p>
       <div className="flex gap-5 pt-2">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
