@@ -38,23 +38,26 @@ function Terminal() {
       className={`${roboto.className} bg-slate-950 w-full text-lg px-7 py-4 rounded-lg flex-1 md:max-w-xl `}
     >
       <div>
-        <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
-        <span className="">$name</span>
+        <span className="text-slate-300">guest@harnes.co: </span>{" "}
+        <span className="">echo</span>{" "}
+        <span className="text-sky-200">$name</span>
       </div>
       <div className="pb-4"> Håkon Harnes</div>
       <div>
-        <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
-        <span className="">$age</span>
+        <span className="text-slate-300">guest@harnes.co: </span>{" "}
+        <span className="">echo</span> <span className="text-sky-200">age</span>
       </div>
       <div className="pb-4">25</div>
       <div>
-        <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
-        <span className="">$location</span>
+        <span className="text-slate-300">guest@harnes.co: </span>{" "}
+        <span className="">echo</span>{" "}
+        <span className="text-sky-200">location</span>
       </div>
       <div className="pb-4">Norway</div>
       <div>
-        <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
-        <span className="">$education</span>
+        <span className="text-slate-300">guest@harnes.co: </span>{" "}
+        <span className="">echo</span>{" "}
+        <span className="text-sky-200">education</span>
       </div>
       <div className="pb-2">MSc. in Computer Science at NTNU</div>
     </div>
