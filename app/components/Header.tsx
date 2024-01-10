@@ -6,7 +6,7 @@ import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="mt-6 flex items-center justify-center  font-semibold sm:justify-between lg:mt-8">
+    <div className="pt-6 flex items-center justify-center  font-semibold sm:justify-between lg:pt-8">
       <ul className="hidden sm:block">
         <li>
           <InternalLink href="/">

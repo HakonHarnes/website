@@ -3,7 +3,7 @@ import "./globals.css";
 
 export default function Home() {
   return (
-    <div className="h-full">
+    <div>
       <Hero />
     </div>
   );
