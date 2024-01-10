@@ -18,9 +18,9 @@ function AboutMe() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white sm:text-4xl md:text-5xl lg:text-6xl">
         Håkon Harnes<span className="text-sky-400">.</span>
       </h1>
-      <p className="text-justify text-xl text-slate-400 leading-6 md:max-w-md">
+      <p className="text-justify text-lg text-slate-400 leading-6 md:max-w-md">
         I&apos;m a <span className="text-sky-400 font-semibold">developer</span>{" "}
-        developer from Norway.
+        from Norway.
       </p>
       <div className="flex gap-5 pt-2">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
@@ -35,7 +35,7 @@ function AboutMe() {
 function Terminal() {
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full text-lg px-7 py-4 rounded-lg flex-1 md:max-w-xl `}
+      className={`${roboto.className} bg-slate-950 w-full px-7 py-4 rounded-lg flex-1 md:max-w-xl `}
     >
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
