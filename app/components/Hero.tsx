@@ -35,7 +35,7 @@ function AboutMe() {
 function Terminal() {
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full text-lg p-6 rounded-lg flex-1 md:max-w-xl `}
+      className={`${roboto.className} bg-slate-950 w-full text-lg px-7 py-4 rounded-lg flex-1 md:max-w-xl `}
     >
       <div>
         <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
@@ -56,7 +56,7 @@ function Terminal() {
         <span className="">$</span> <span className="text-sky-200">echo</span>{" "}
         <span className="">$education</span>
       </div>
-      <div className="pb-4">MSc. in Computer Science at NTNU</div>
+      <div className="pb-2">MSc. in Computer Science at NTNU</div>
     </div>
   );
 }
