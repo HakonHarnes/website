@@ -10,7 +10,7 @@ type ButtonProps = {
 
 function buttonColorClasses(color: ButtonColors) {
   const baseClasses =
-    "rounded font-semibold h-12 px-6 w-40 flex items-center justify-center";
+    "rounded font-semibold h-12 px-6 red-50 w-40 flex items-center justify-center";
 
   switch (color) {
     case "white":

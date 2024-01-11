@@ -5,7 +5,7 @@ const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-between gap-10 pt-20 sm:pt-24 lg:pt-32 md:flex-row">
+    <div className="mx-auto flex flex-col items-center justify-between gap-8 pt-20 sm:pt-24 md:gap-10 lg:flex-row lg:pt-32">
       <AboutMe />
       <Terminal />
     </div>
@@ -14,15 +14,15 @@ export default function Hero() {
 
 function AboutMe() {
   return (
-    <div className="flex flex-col items-center gap-5 md:items-start flex-1 md:max-w-xl">
-      <h1 className="text-4xl font-extrabold tracking-tight dark:text-white sm:text-4xl md:text-5xl lg:text-6xl">
+    <div className="w-full flex flex-1 flex-col items-center gap-2 md:max-w-xl lg:items-start md:gap-3 lg:gap-4">
+      <h1 className="text-4xl font-extrabold tracking-tight dark:text-white  md:text-4xl lg:text-6xl">
         Håkon Harnes<span className="text-sky-400">.</span>
       </h1>
-      <p className="text-justify text-lg text-slate-400 leading-6 md:max-w-md">
-        I&apos;m a <span className="text-sky-400 font-semibold">developer</span>{" "}
+      <p className="text-justify text-xl leading-6 text-slate-400 md:max-w-md lg:text-2xl">
+        I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>
-      <div className="flex gap-5 pt-2">
+      <div className="w-full flex gap-3 pt-2 mobile:w-auto lg:gap-4">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
         <Button href="/" color="white">
           Resume
@@ -35,7 +35,7 @@ function AboutMe() {
 function Terminal() {
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full px-7 py-4 rounded-lg flex-1 md:max-w-xl `}
+      className={`${roboto.className} bg-slate-950 w-full py-4 px-6 rounded sm:p-4 sm:rounded-lg flex-1 sm:max-w-xl `}
     >
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
@@ -54,13 +54,15 @@ function Terminal() {
         <span className="">echo</span>{" "}
         <span className="text-sky-200">$location</span>
       </div>
-      <div className="pb-4">Norway</div>
-      <div>
+      <div className="pb-2 sm:pb-4">Norway</div>
+      <div className="hidden sm:block">
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
         <span className="">echo</span>{" "}
         <span className="text-sky-200">$education</span>
       </div>
-      <div className="pb-2">MSc. in Computer Science at NTNU</div>
+      <div className="pb-2 hidden sm:block">
+        MSc. in Computer Science at NTNU
+      </div>
     </div>
   );
 }
