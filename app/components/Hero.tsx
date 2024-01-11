@@ -45,19 +45,20 @@ function Terminal() {
       <div className="pb-4"> Håkon Harnes</div>
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
-        <span className="">echo</span> <span className="text-sky-200">age</span>
+        <span className="">echo</span>{" "}
+        <span className="text-sky-200">$age</span>
       </div>
       <div className="pb-4">25</div>
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
         <span className="">echo</span>{" "}
-        <span className="text-sky-200">location</span>
+        <span className="text-sky-200">$location</span>
       </div>
       <div className="pb-4">Norway</div>
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
         <span className="">echo</span>{" "}
-        <span className="text-sky-200">education</span>
+        <span className="text-sky-200">$education</span>
       </div>
       <div className="pb-2">MSc. in Computer Science at NTNU</div>
     </div>
