@@ -1,3 +1,9 @@
+import { SectionHeader } from "./SectionHeader";
+
 export default function About() {
-  return <div></div>;
+  return (
+    <section>
+      <SectionHeader title="About" />
+    </section>
+  );
 }
