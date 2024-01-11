@@ -35,7 +35,7 @@ function AboutMe() {
 function Terminal() {
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full py-4 px-6 rounded sm:p-4 sm:rounded-lg flex-1 sm:max-w-xl `}
+      className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl `}
     >
       <div>
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
@@ -54,15 +54,13 @@ function Terminal() {
         <span className="">echo</span>{" "}
         <span className="text-sky-200">$location</span>
       </div>
-      <div className="pb-2 sm:pb-4">Norway</div>
+      <div className="pb-0 sm:pb-4">Norway</div>
       <div className="hidden sm:block">
         <span className="text-slate-300">guest@harnes.co: </span>{" "}
         <span className="">echo</span>{" "}
         <span className="text-sky-200">$education</span>
       </div>
-      <div className="pb-2 hidden sm:block">
-        MSc. in Computer Science at NTNU
-      </div>
+      <div className="hidden sm:block">MSc. in Computer Science at NTNU</div>
     </div>
   );
 }
