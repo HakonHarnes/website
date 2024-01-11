@@ -5,7 +5,7 @@ const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export default function Hero() {
   return (
-    <div className="mx-auto flex flex-col items-center justify-between gap-8 pt-20 sm:pt-24 md:gap-10 lg:flex-row lg:pt-32">
+    <div className="mx-auto flex flex-col items-center justify-between gap-8 py-20 sm:py-24 md:gap-10 lg:flex-row lg:py-32">
       <AboutMe />
       <Terminal />
     </div>
