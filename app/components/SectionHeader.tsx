@@ -11,7 +11,7 @@ export const SectionHeader = ({ title, dir = "l" }: Props) => {
       }`}
     >
       <div className="w-full h-[2px] bg-slate-700 opacity-30" />
-      <h2 className="text-right text-3xl font-black">
+      <h2 className="text-right text-3xl lg:text-4xl font-black">
         <span>
           {title}
           <span className="text-sky-500">.</span>
