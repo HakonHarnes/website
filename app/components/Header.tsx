@@ -19,13 +19,16 @@ export default function Header() {
       <div className="flex  w-full justify-between xxs:gap-8 sm:w-auto">
         <ul className="flex w-full items-center justify-between gap-4 mobile:w-auto xxs:gap-8 sm:gap-10 sm:border-r sm:border-r-slate-600 sm:pr-8">
           <li>
-            <InternalLink href="/">About</InternalLink>
+            <InternalLink href="/#about">About</InternalLink>
           </li>
           <li>
-            <InternalLink href="/">Projects</InternalLink>
+            <InternalLink href="/#projects">Projects</InternalLink>
           </li>
           <li>
-            <InternalLink href="/">Experience</InternalLink>
+            <InternalLink href="/#experience">Experience</InternalLink>
+          </li>
+          <li>
+            <InternalLink href="/#publications">Publications</InternalLink>
           </li>
         </ul>
         <ul className="hidden gap-3 mobile:flex mobile:items-center mobile:justify-center sm:gap-4">
