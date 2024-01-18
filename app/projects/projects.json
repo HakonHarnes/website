@@ -1,0 +1,10 @@
+[
+  {
+    "slug": "img-clip",
+    "media": "/img-clip.gif",
+    "title": "img-clip.nvim",
+    "technologies": ["Lua", "Bash", ".NET"],
+    "description": "Neovim plugin",
+    "github": "https://github.com/hakonharnes/img-clip.nvim"
+  }
+]
