@@ -4,6 +4,7 @@ import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 
 import "./globals.css";
+import Publications from "./components/Publications";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <About />
       <Projects />
       <Experience />
+      <Publications />
     </>
   );
 }
