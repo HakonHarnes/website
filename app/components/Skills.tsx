@@ -1,4 +1,4 @@
-import Card from "./Card";
+import TechnologyList from "./TechnologyList";
 
 export default function Skills() {
   return (
@@ -28,10 +28,8 @@ function SkillList({ title, technologies }: SkillListProps) {
   return (
     <div className="flex flex-col gap-2">
       <h1 className="text-xl font-bold">{title}</h1>
-      <div className="flex flex-wrap min-w-80 gap-2 font-medium">
-        {technologies.map((tech) => (
-          <Card key={tech}>{tech}</Card>
-        ))}
+      <div className="min-w-80">
+        <TechnologyList technologies={technologies} />
       </div>
     </div>
   );

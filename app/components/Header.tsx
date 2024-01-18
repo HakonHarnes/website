@@ -1,3 +1,4 @@
+import ExternalLink from "./ExternalLink";
 import Link from "next/link";
 import LinkedInIcon from "./icons/LinkedInIcon";
 import GitHubIcon from "./icons/GitHubIcon";
@@ -6,7 +7,7 @@ import NameIcon from "./icons/NameIcon";
 
 export default function Header() {
   return (
-    <div className="pt-6 flex items-center justify-center  font-semibold sm:justify-between lg:pt-8">
+    <nav className="pt-6 flex items-center justify-center  font-semibold sm:justify-between lg:pt-8">
       <ul className="hidden sm:block">
         <li>
           <InternalLink href="/">
@@ -44,7 +45,7 @@ export default function Header() {
           </li>
         </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 
@@ -62,26 +63,5 @@ function InternalLink({
     >
       {children}
     </Link>
-  );
-}
-
-function ExternalLink({
-  href,
-  newTab = true,
-  children,
-}: {
-  href: string;
-  newTab?: boolean;
-  children: React.ReactNode;
-}) {
-  return (
-    <a
-      href={href}
-      target={newTab ? "_blank" : "_self"}
-      rel="noopener noreferrer"
-      className="fill-white stroke-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400 "
-    >
-      {children}
-    </a>
   );
 }
