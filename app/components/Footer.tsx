@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <div className="flex justify-center py-5 text-slate-300">
+    <section className="flex justify-center py-5 text-slate-300 mt-28">
       © Håkon Harnes 2024
-    </div>
+    </section>
   );
 }
