@@ -10,15 +10,15 @@ export default function Experience() {
           company="NTNUi Sprint"
           position="Software engineer"
           date="2022 - Present"
-          location="Trondheim, Norway"
+          location="Trondheim"
           description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
           technologies={["Python", "Django", "Pytest"]}
         />
         <ExperienceItem
           company="Variant"
-          position="Software engineer intern"
+          position="Internship"
           date="2022 - Present"
-          location="Trondheim, Norway"
+          location="Trondheim"
           description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
           technologies={["Python", "Django", "Pytest"]}
         />
@@ -26,7 +26,7 @@ export default function Experience() {
           company="NTNU"
           position="Teaching assistant"
           date="2022 - Present"
-          location="Trondheim, Norway"
+          location="Trondheim"
           description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
           technologies={["Python", "Django", "Pytest"]}
         />
