@@ -24,8 +24,8 @@ function AboutMe() {
       </p>
       <div className="w-full flex gap-3 pt-2 mobile:w-auto lg:gap-4">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
-        <Button href="/" color="white">
-          Resume
+        <Button href="https://github.com/hakonharnes" color="white">
+          GitHub
         </Button>
       </div>
     </div>
