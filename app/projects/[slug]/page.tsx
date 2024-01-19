@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Card from "@/components/Card";
-
-import CardList from "@/components/CardList";
-import InternalLink from "@/components/InternalLink";
-import ExternalLink from "@/components/ExternalLink";
 import Button from "@/components/Button";
-
-import { Project } from "@/types/Project";
 import projects from "../projects.json";
 
 type ProjectProps = {
@@ -29,7 +23,7 @@ function ProjectDoesNotExist() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white  md:text-4xl lg:text-6xl">
         Project does not exist (yet)
       </h1>
-      <p className="text-justify text-xl  text-slate-400 lg:text-2xl">
+      <p className="text-justify text-xl text-slate-400 lg:text-2xl">
         But maybe I can help you with your project?
       </p>
       <div className="flex gap-3 lg:gap-4">
@@ -42,38 +36,29 @@ function ProjectDoesNotExist() {
   );
 }
 
-function ProjectComponent({ project }: ProjectComponentProps) {
+function ProjectComponent({ project }) {
   return (
     <div className="flex flex-col items-center justify-center gap-4 py-14">
-      <ProjectImage media={project.media} slug={project.slug} />
-      <ProjectDetails
-        title={project.title}
-        slug={project.slug}
-        technologies={project.technologies}
-      />
-      <ProjectAbstract abstract={project.abstract} />
+      <ProjectImage media={project.media} />
+      <ProjectDetails title={project.title} description={project.description} />
+      {project.feedback && <FeedbackList feedback={project.feedback} />}
+    </div>
+  );
+}
+
+function FeedbackList({ feedback }) {
+  return (
+    <div className="flex flex-col items-center gap-10 pt-20">
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
-        {project.feedback &&
-          project.feedback.map((feedback) => (
-            <Feedback
-              key={feedback.name}
-              url={feedback.url}
-              source={feedback.source}
-              comment={feedback.comment}
-            />
-          ))}
+        {feedback.map((item) => (
+          <FeedbackItem key={item.name} {...item} />
+        ))}
       </div>
     </div>
   );
 }
 
-type FeedbackProps = {
-  url: string;
-  source: string;
-  comment: string;
-};
-
-function Feedback({ url, source, comment }: FeedbackProps) {
+function FeedbackItem({ url, source, comment }) {
   return (
     <Card>
       <div className="flex h-full flex-col gap-1 items-start">
@@ -92,12 +77,7 @@ function Feedback({ url, source, comment }: FeedbackProps) {
   );
 }
 
-type ProjectImageProps = {
-  media: string;
-  slug: string;
-};
-
-function ProjectImage({ media, slug }: ProjectImageProps) {
+function ProjectImage({ media, slug }) {
   return (
     <Image
       className="aspect-video w-full max-w-5xl rounded-lg border border-slate-700 object-cover"
@@ -109,26 +89,11 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
   );
 }
 
-type ProjectDetailsProps = {
-  title: string;
-  slug: string;
-  technologies: string[];
-};
-
-function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
+function ProjectDetails({ title, description }) {
   return (
-    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-      <h2 className="text-nowrap cursor-pointer text-2xl font-bold hover:text-sky-500">
-        {title}
-      </h2>
+    <div className="w-full flex flex-col gap-4">
+      <h2 className="text-center text-3xl font-bold">{title}</h2>
+      <p className="text-justify text-lg text-slate-400">{description}</p>;
     </div>
   );
-}
-
-type ProjectDescriptionProps = {
-  abstract: string;
-};
-
-function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
-  return <p className="text-justify text-lg text-slate-400">{abstract}</p>;
 }

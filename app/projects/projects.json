@@ -5,7 +5,7 @@
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
     "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
-    "description": "Neovim plugin",
+    "description": "Neovim plugin Hello",
     "github": "https://github.com/hakonharnes/img-clip.nvim",
     "feedback": [
       {
