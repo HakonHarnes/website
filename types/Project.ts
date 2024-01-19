@@ -4,7 +4,7 @@ export type Project = {
   title: string;
   technologies: string[];
   abstract: string;
-  description: string;
+  description: string[];
   github: string;
   feedback: string[];
 };

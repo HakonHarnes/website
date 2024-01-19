@@ -93,7 +93,11 @@ function ProjectDetails({ title, description }) {
   return (
     <div className="w-full flex flex-col gap-4">
       <h2 className="text-center text-3xl font-bold">{title}</h2>
-      <p className="text-justify text-lg text-slate-400">{description}</p>;
+      <div className="flex flex-col gap-4 text-lg text-slate-400 text-justify">
+        {description.map((desc) => (
+          <p key={desc}>{desc}</p>
+        ))}
+      </div>
     </div>
   );
 }
