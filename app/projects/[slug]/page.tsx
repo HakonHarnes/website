@@ -1,3 +1,5 @@
+import Button from "@/components/Button";
+
 import { Project } from "@/types/Project";
 import projects from "../projects.json";
 
@@ -16,7 +18,22 @@ export default function Page({ params }: ProjectProps) {
 }
 
 function ProjectDoesNotExist() {
-  return <div>Project does not exist</div>;
+  return (
+    <section className="flex h-full flex-col items-center justify-center gap-6 py-20 sm:py-24 lg:py-32">
+      <h1 className="text-4xl font-extrabold tracking-tight dark:text-white  md:text-4xl lg:text-6xl">
+        Project does not exist (yet)
+      </h1>
+      <p className="text-justify text-xl  text-slate-400 lg:text-2xl">
+        But maybe I can help you with your project?
+      </p>
+      <div className="flex gap-3 lg:gap-4">
+        <Button href="mailto:hakon@harnes.co">Contact me</Button>
+        <Button href="/" color="white">
+          Go back
+        </Button>
+      </div>
+    </section>
+  );
 }
 
 type ProjectComponentProps = {
@@ -25,8 +42,8 @@ type ProjectComponentProps = {
 
 function ProjectComponent({ project }: ProjectComponentProps) {
   return (
-    <div>
+    <section>
       <h1>{project.title}</h1>
-    </div>
+    </section>
   );
 }
