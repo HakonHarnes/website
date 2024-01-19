@@ -1,9 +1,8 @@
-import Button from "./Button";
+import Button from "@/components/Button";
 import { Roboto_Mono } from "next/font/google";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
-
-export default function Hero() {
+export default function HeroSection() {
   return (
     <div className="mx-auto flex flex-col items-center justify-between gap-8 py-20 sm:py-24 md:gap-10 lg:flex-row lg:py-32">
       <AboutMe />

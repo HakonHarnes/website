@@ -1,8 +1,8 @@
-import TechnologyList from "./TechnologyList";
-import ExternalLink from "./ExternalLink";
-import { SectionHeader } from "./SectionHeader";
+import CardList from "@/components/CardList";
+import ExternalLink from "@/components/ExternalLink";
+import { SectionHeader } from "@/components/SectionHeader";
 
-export default function Publications() {
+export default function PublicationsSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Publications" />
@@ -67,7 +67,7 @@ function PublicationItem({
         <h3 className="font-semibold text-sky-400 text-xl">{journal}</h3>
       </div>
       <p className="my-2 text-lg text-slate-400">{description}</p>
-      <TechnologyList technologies={technologies} />
+      <CardList elements={technologies} />
       <div className="w-full h-[1px] bg-slate-700 opacity-30 mt-5" />
     </div>
   );

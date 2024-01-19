@@ -1,7 +1,7 @@
-import TechnologyList from "./TechnologyList";
-import { SectionHeader } from "./SectionHeader";
+import CardList from "@/components/CardList";
+import { SectionHeader } from "@/components/SectionHeader";
 
-export default function Experience() {
+export default function ExperienceSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Experience" />
@@ -63,7 +63,7 @@ function ExperienceItem({
         <span className="text-slate-400 text-lg">{location}</span>
       </div>
       <p className="my-2 text-lg text-slate-400">{description}</p>
-      <TechnologyList technologies={technologies} />
+      <CardList elements={technologies} />
       <div className="w-full h-[1px] bg-slate-700 opacity-30 mt-5" />
     </div>
   );

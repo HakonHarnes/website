@@ -1,19 +1,19 @@
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Projects from "./components/Projects";
-import Experience from "./components/Experience";
+import HeroSection from "./components/HeroSection";
+import AboutSection from "./components/AboutSection";
+import ProjectsSection from "./components/ProjectsSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 import "./globals.css";
-import Publications from "./components/Publications";
+import PublicationsSection from "./components/PublicationsSection";
 
 export default function Home() {
   return (
     <>
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Publications />
+      <HeroSection />
+      <AboutSection />
+      <ProjectsSection />
+      <ExperienceSection />
+      <PublicationsSection />
     </>
   );
 }

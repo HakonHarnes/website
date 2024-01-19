@@ -1,13 +1,16 @@
-import { Project } from "../../types/Project";
+import { Project } from "@/types/Project";
 import projects from "../projects/projects.json";
-import TechnologyList from "./TechnologyList";
-import InternalLink from "./InternalLink";
-import ExternalLink from "./ExternalLink";
+
+import CardList from "@/components/CardList";
+import InternalLink from "@/components/InternalLink";
+import ExternalLink from "@/components/ExternalLink";
+
 import Link from "next/link";
 import Image from "next/image";
-import { SectionHeader } from "./SectionHeader";
 
-export default function Projects() {
+import { SectionHeader } from "@/components/SectionHeader";
+
+export default function ProjectsSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Projects" />
@@ -71,7 +74,7 @@ function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
       </Link>
       <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
       <div className="flex-shrink-0">
-        <TechnologyList technologies={technologies} />
+        <CardList elements={technologies} />
       </div>
     </div>
   );

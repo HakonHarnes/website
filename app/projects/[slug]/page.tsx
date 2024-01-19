@@ -1,4 +1,4 @@
-import { Project } from "../../../types/Project";
+import { Project } from "@/types/Project";
 import projects from "../projects.json";
 
 type ProjectProps = {

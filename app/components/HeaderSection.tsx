@@ -1,12 +1,12 @@
-import ExternalLink from "./ExternalLink";
-import InternalLink from "./InternalLink";
+import LinkedInIcon from "@/components/LinkedInIcon";
+import GitHubIcon from "@/components/GitHubIcon";
+import EmailIcon from "@/components/EmailIcon";
+import NameIcon from "@/components/NameIcon";
 
-import LinkedInIcon from "./icons/LinkedInIcon";
-import GitHubIcon from "./icons/GitHubIcon";
-import EmailIcon from "./icons/EmailIcon";
-import NameIcon from "./icons/NameIcon";
+import ExternalLink from "@/components/ExternalLink";
+import InternalLink from "@/components/InternalLink";
 
-export default function Header() {
+export default function HeaderSection() {
   return (
     <nav className="pt-6 flex items-center justify-center sm:justify-between lg:pt-8">
       <ul className="hidden sm:block">
