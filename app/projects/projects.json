@@ -4,8 +4,17 @@
     "media": "/img-clip.gif",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
-    "abstract": "Neovim plugin",
+    "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
     "description": "Neovim plugin",
     "github": "https://github.com/hakonharnes/img-clip.nvim"
+  },
+  {
+    "slug": "emcc-obf",
+    "media": "/wasm.jpg",
+    "title": "emcc-obf",
+    "technologies": ["Docker", "LLVM", "WebAssembly"],
+    "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+    "description": "Neovim plugin",
+    "github": "https://github.com/hakonharnes/emcc-obf"
   }
 ]
