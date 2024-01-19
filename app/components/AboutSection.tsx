@@ -5,7 +5,7 @@ export default function AboutSection() {
   return (
     <section>
       <SectionHeader title="About" />
-      <div className="flex flex-col gap-8 lg:flex-row lg:gap-28">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
         <div className="flex flex-col gap-4 text-lg text-slate-400 text-justify">
           <p>
             Lorem ipsum odor amet, consectetuer adipiscing elit. Pretium rhoncus

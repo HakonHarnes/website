@@ -1,3 +1,8 @@
+import Image from "next/image";
+
+import CardList from "@/components/CardList";
+import InternalLink from "@/components/InternalLink";
+import ExternalLink from "@/components/ExternalLink";
 import Button from "@/components/Button";
 
 import { Project } from "@/types/Project";
@@ -36,14 +41,57 @@ function ProjectDoesNotExist() {
   );
 }
 
-type ProjectComponentProps = {
-  project: Project;
-};
-
 function ProjectComponent({ project }: ProjectComponentProps) {
   return (
-    <section>
-      <h1>{project.title}</h1>
-    </section>
+    <div className="flex flex-col justify-center items-center gap-4 py-14">
+      <ProjectImage media={project.media} slug={project.slug} />
+      <ProjectDetails
+        title={project.title}
+        slug={project.slug}
+        technologies={project.technologies}
+      />
+      <ProjectAbstract abstract={project.abstract} />
+    </div>
   );
+}
+
+type ProjectImageProps = {
+  media: string;
+  slug: string;
+};
+
+function ProjectImage({ media, slug }: ProjectImageProps) {
+  return (
+    <Image
+      className="w-full max-w-5xl aspect-video rounded-lg border border-slate-700 object-cover"
+      src={media}
+      width={1000}
+      height={1000}
+      alt={slug}
+    />
+  );
+}
+
+type ProjectDetailsProps = {
+  title: string;
+  slug: string;
+  technologies: string[];
+};
+
+function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
+  return (
+    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+      <h2 className="text-2xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
+        {title}
+      </h2>
+    </div>
+  );
+}
+
+type ProjectDescriptionProps = {
+  abstract: string;
+};
+
+function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
+  return <p className="text-lg text-justify text-slate-400">{abstract}</p>;
 }
