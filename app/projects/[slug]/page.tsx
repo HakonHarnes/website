@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Card from "@/components/Card";
 
 import CardList from "@/components/CardList";
 import InternalLink from "@/components/InternalLink";
@@ -43,7 +44,7 @@ function ProjectDoesNotExist() {
 
 function ProjectComponent({ project }: ProjectComponentProps) {
   return (
-    <div className="flex flex-col justify-center items-center gap-4 py-14">
+    <div className="flex flex-col items-center justify-center gap-4 py-14">
       <ProjectImage media={project.media} slug={project.slug} />
       <ProjectDetails
         title={project.title}
@@ -51,7 +52,43 @@ function ProjectComponent({ project }: ProjectComponentProps) {
         technologies={project.technologies}
       />
       <ProjectAbstract abstract={project.abstract} />
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
+        {project.feedback &&
+          project.feedback.map((feedback) => (
+            <Feedback
+              key={feedback.name}
+              url={feedback.url}
+              source={feedback.source}
+              comment={feedback.comment}
+            />
+          ))}
+      </div>
     </div>
+  );
+}
+
+type FeedbackProps = {
+  url: string;
+  source: string;
+  comment: string;
+};
+
+function Feedback({ url, source, comment }: FeedbackProps) {
+  return (
+    <Card>
+      <div className="flex h-full flex-col gap-1 items-start">
+        <p>{comment}</p>
+        <div className="flex-grow" />
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-slate-400 hover:text-sky-400"
+        >
+          Source: {source}
+        </a>
+      </div>
+    </Card>
   );
 }
 
@@ -63,7 +100,7 @@ type ProjectImageProps = {
 function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Image
-      className="w-full max-w-5xl aspect-video rounded-lg border border-slate-700 object-cover"
+      className="aspect-video w-full max-w-5xl rounded-lg border border-slate-700 object-cover"
       src={media}
       width={1000}
       height={1000}
@@ -80,8 +117,8 @@ type ProjectDetailsProps = {
 
 function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-      <h2 className="text-2xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+      <h2 className="text-nowrap cursor-pointer text-2xl font-bold hover:text-sky-500">
         {title}
       </h2>
     </div>
@@ -93,5 +130,5 @@ type ProjectDescriptionProps = {
 };
 
 function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
-  return <p className="text-lg text-justify text-slate-400">{abstract}</p>;
+  return <p className="text-justify text-lg text-slate-400">{abstract}</p>;
 }

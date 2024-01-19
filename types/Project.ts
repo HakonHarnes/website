@@ -6,4 +6,5 @@ export type Project = {
   abstract: string;
   description: string;
   github: string;
+  feedback: string[];
 };

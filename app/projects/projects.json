@@ -6,7 +6,84 @@
     "technologies": ["Lua", "Bash", ".NET"],
     "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
     "description": "Neovim plugin",
-    "github": "https://github.com/hakonharnes/img-clip.nvim"
+    "github": "https://github.com/hakonharnes/img-clip.nvim",
+    "feedback": [
+      {
+        "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "That's amazing! Also synergizes great with 3rd/image.nvim, it's still mind blowing to me that all this is possible in a terminal.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzdorf/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzg0pt/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Thank you! This is perfect especially for my LaTeX and vimwiki workflows.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyt5tr/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "What kind of sorcery is this? Amazing.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg03nns/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Great work, easy interface. Love it!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kfu1t3h/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is amazing.",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyxvns/?utm_source=share&utm_medium=web2x&context=3",
+        "source": "Reddit"
+      },
+      {
+        "comment": "Looks awesome! +1 star for you.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kftlwp3/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is so cool!",
+        "source": "Twitter/X",
+        "url": "https://x.com/sudqijawabreh/status/1742621211975155973?s=20"
+      },
+      {
+        "comment": "Incredible work.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyrm2q/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is cool.",
+        "source": "Twitter/X",
+        "url": "https://x.com/MeetGor21/status/1742587885747114079?s=20"
+      },
+      {
+        "comment": "Magic!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg2t5jw/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Sick!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg49w3q/?utm_source=share&utm_medium=web2x&context=3"
+      }
+    ]
   },
   {
     "slug": "emcc-obf",
