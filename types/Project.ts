@@ -3,6 +3,7 @@ export type Project = {
   media: string;
   title: string;
   technologies: string[];
+  abstract: string;
   description: string;
   github: string;
 };

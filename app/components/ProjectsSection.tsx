@@ -36,7 +36,7 @@ function ProjectComponent({ project }: ProjectComponentProps) {
         slug={project.slug}
         technologies={project.technologies}
       />
-      <ProjectDescription description={project.description} />
+      <ProjectAbstract abstract={project.abstract} />
       <ProjectLinks slug={project.slug} github={project.github} />
     </div>
   );
@@ -84,11 +84,11 @@ function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
 }
 
 type ProjectDescriptionProps = {
-  description: string;
+  abstract: string;
 };
 
-function ProjectDescription({ description }: ProjectDescriptionProps) {
-  return <p className="text-lg text-justify text-slate-400">{description}</p>;
+function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
+  return <p className="text-lg text-justify text-slate-400">{abstract}</p>;
 }
 
 type ProjectLinksProps = {
