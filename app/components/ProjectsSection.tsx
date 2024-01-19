@@ -28,13 +28,16 @@ type ProjectComponentProps = {
 };
 
 function ProjectComponent({ project }: ProjectComponentProps) {
-  const { media, slug, title, technologies, description, github } = project;
   return (
     <div className="flex flex-col gap-4">
-      <ProjectImage media={media} slug={slug} />
-      <ProjectDetails title={title} slug={slug} technologies={technologies} />
-      <ProjectDescription description={description} />
-      <ProjectLinks slug={slug} github={github} />
+      <ProjectImage media={project.media} slug={project.slug} />
+      <ProjectDetails
+        title={project.title}
+        slug={project.slug}
+        technologies={project.technologies}
+      />
+      <ProjectDescription description={project.description} />
+      <ProjectLinks slug={project.slug} github={project.github} />
     </div>
   );
 }
