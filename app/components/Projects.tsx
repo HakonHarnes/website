@@ -1,3 +1,5 @@
+import { Project } from "../../types/Project";
+import projects from "../projects/projects.json";
 import TechnologyList from "./TechnologyList";
 import InternalLink from "./InternalLink";
 import ExternalLink from "./ExternalLink";
@@ -10,60 +12,20 @@ export default function Projects() {
     <section className="mt-28">
       <SectionHeader title="Projects" />
       <div className="grid gap-14 lg:grid-cols-2 pt-2">
-        <Project
-          title="img-clip.nvim"
-          slug="img-clip"
-          media="/img-clip.gif"
-          github="https://github.com/hakonharnes/img-clip.nvim/"
-          technologies={["Lua", "Bash", ".NET"]}
-          description="Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users."
-        />
-        {/* <Project */}
-        {/*   title="PrintBuddy" */}
-        {/*   slug="print-buddy" */}
-        {/*   media="/img-clip.png" */}
-        {/*   github="https://github.com/hakonharnes/print-buddy/" */}
-        {/*   technologies={["Python", "FastAPI", "TypeScript", "Next.js"]} */}
-        {/*   description="Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users." */}
-        {/* /> */}
-        <Project
-          title="emcc-obf"
-          slug="emcc-obf"
-          media="/wasm.jpg"
-          github="https://github.com/hakonharnes/emcc-obf/"
-          technologies={["Docker", "LLVM", "WebAssembly"]}
-          description="Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users."
-        />
-        {/* <Project */}
-        {/*   title="Website" */}
-        {/*   slug="personal-website" */}
-        {/*   media="/img-clip.png" */}
-        {/*   github="https://github.com/hakonharnes/website/" */}
-        {/*   technologies={["TypeScript", "Next.js"]} */}
-        {/*   description="Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users." */}
-        {/* /> */}
+        {projects.map((project) => (
+          <ProjectComponent key={project.slug} project={project} />
+        ))}
       </div>
     </section>
   );
 }
 
-type ProjectProps = {
-  title: string;
-  slug: string;
-  technologies: string[];
-  github: string;
-  description: string;
-  media: string;
+type ProjectComponentProps = {
+  project: Project;
 };
 
-function Project({
-  title,
-  slug,
-  technologies,
-  github,
-  description,
-  media,
-}: ProjectProps) {
+function ProjectComponent({ project }: ProjectComponentProps) {
+  const { media, slug, title, technologies, description, github } = project;
   return (
     <div className="flex flex-col gap-4">
       <ProjectImage media={media} slug={slug} />
@@ -102,8 +64,10 @@ type ProjectDetailsProps = {
 function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-      <Link href={`projects/${slug}`} className="hover:text-sky-500">
-        <h2 className="text-2xl font-bold text-nowrap">{title}</h2>
+      <Link href={`projects/${slug}`}>
+        <h2 className="text-2xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
+          {title}
+        </h2>
       </Link>
       <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
       <div className="flex-shrink-0">

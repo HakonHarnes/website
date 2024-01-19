@@ -1,3 +1,4 @@
+import { Project } from "../../../types/Project";
 import projects from "../projects.json";
 
 type ProjectProps = {
@@ -5,10 +6,10 @@ type ProjectProps = {
 };
 
 export default function Page({ params }: ProjectProps) {
-  const project = projects.find((project) => project.slug === params.slug);
+  const project = projects.find((p) => p.slug === params.slug);
 
   if (project) {
-    return <Project {...project} />;
+    return <ProjectComponent project={project} />;
   } else {
     return <ProjectDoesNotExist />;
   }
@@ -19,30 +20,13 @@ function ProjectDoesNotExist() {
 }
 
 type ProjectComponentProps = {
-  slug: string;
-  title: string;
-  media: string;
-  technologies: string[];
-  description: string;
+  project: Project;
 };
 
-function Project({
-  slug,
-  title,
-  media,
-  technologies,
-  description,
-}: ProjectComponentProps) {
+function ProjectComponent({ project }: ProjectComponentProps) {
   return (
     <div>
-      <h1>{title}</h1>
-      <img src={media} alt={title} />
-      <p>{description}</p>
-      <ul>
-        {technologies.map((tech, index) => (
-          <li key={index}>{tech}</li>
-        ))}
-      </ul>
+      <h1>{project.title}</h1>
     </div>
   );
 }
