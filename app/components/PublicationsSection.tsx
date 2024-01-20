@@ -12,7 +12,7 @@ export default function PublicationsSection() {
           journal="Pre-print"
           date="2024"
           link="/"
-          abstract="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
+          abstract="To be published."
           keywords={[
             "WebAssembly",
             "Obfuscation",
