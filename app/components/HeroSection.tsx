@@ -21,7 +21,7 @@ function AboutMe() {
         I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>
-      <div className="flex w-full gap-3 pt-2 mobile:w-auto lg:gap-4">
+      <div className="flex w-full justify-center gap-3 pt-2 lg:gap-4 lg:justify-start ">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
         <Button href="https://github.com/hakonharnes" color="white">
           GitHub

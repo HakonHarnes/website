@@ -4,32 +4,29 @@ type ButtonColors = "sky" | "white" | "red";
 
 type ButtonProps = {
   href: string;
-  color?: ButtonColors; // Optional color prop
+  color?: ButtonColors;
   children?: React.ReactNode;
 };
 
 function buttonColorClasses(color: ButtonColors) {
-  const baseClasses =
-    "rounded font-semibold h-12 px-6 red-50 w-40 flex items-center justify-center";
-
   switch (color) {
     case "white":
-      return `${baseClasses} bg-white hover:bg-gray-300 text-black`;
+      return "bg-white hover:bg-gray-300 text-black";
     case "red":
-      return `${baseClasses} bg-red-500 hover:bg-red-400 text-white`;
+      return "bg-red-500 hover:bg-red-400 text-white";
     case "sky":
     default:
-      return `${baseClasses} bg-sky-500 hover:bg-sky-400 text-white`;
+      return "bg-sky-500 hover:bg-sky-400 text-white";
   }
 }
 
 export default function Button({ href, color, children }: ButtonProps) {
-  const className = buttonColorClasses(color || "sky");
-
   return (
     <Link
       href={href}
-      className={className}
+      className={`rounded font-semibold h-12 flex items-center justify-center w-full xs:max-w-40 ${buttonColorClasses(
+        color || "sky",
+      )}`}
       rel="noopener noreferrer"
       target="_blank"
     >

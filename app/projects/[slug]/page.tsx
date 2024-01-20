@@ -83,7 +83,7 @@ function ProjectLinks({
   twitter?: string;
 }) {
   return (
-    <div className="flex flex-col gap-3 sm:flex-row lg:gap-4">
+    <div className="w-full justify-center items-center flex flex-col gap-3 xs:flex-row lg:gap-4">
       {github && (
         <Button href={github} color="white">
           GitHub
