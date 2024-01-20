@@ -61,9 +61,7 @@ function Terminal({ commands }: TerminalProps) {
             <span>echo </span>
             <span className="text-sky-200">{command.variable}</span>
           </div>
-          <div
-            className={`pb-4 ${index === commands.length - 1 ? "sm:pb-4" : ""}`}
-          >
+          <div className={index !== commands.length - 1 ? "pb-4" : ""}>
             {command.value}
           </div>
         </>
