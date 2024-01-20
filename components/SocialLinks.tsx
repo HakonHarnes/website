@@ -5,7 +5,7 @@ import EmailIcon from "./EmailIcon";
 
 export default function SocialLinks() {
   return (
-    <ul className="gap-3 flex items-center justify-center sm:gap-4">
+    <ul className="gap-3 flex items-center justify-center">
       <li>
         <ExternalLink href="https://www.linkedin.com/in/hakon-harnes/">
           <LinkedInIcon />
