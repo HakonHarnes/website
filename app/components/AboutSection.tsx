@@ -28,7 +28,9 @@ export default function AboutSection() {
           </p>
           <MyLinks />
         </div>
-        <Skills />
+        <div className="lg:w-72 lg:flex-shrink-0">
+          <Skills />
+        </div>
       </div>
     </section>
   );
@@ -47,7 +49,7 @@ function MyLinks() {
 
 function Skills() {
   return (
-    <div className="flex flex-col gap-8">
+    <div className="w-full flex flex-col gap-8">
       <SkillList
         title="Languages"
         technologies={["Python", "TypeScript", "HTML", "CSS", "Bash", "Rust"]}
@@ -73,9 +75,7 @@ function SkillList({ title, technologies }: SkillListProps) {
   return (
     <div className="flex flex-col gap-2">
       <h1 className="text-xl font-bold">{title}</h1>
-      <div className="min-w-80">
-        <CardList elements={technologies} />
-      </div>
+      <CardList elements={technologies} />
     </div>
   );
 }
