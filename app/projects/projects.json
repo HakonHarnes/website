@@ -5,7 +5,13 @@
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
     "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+    "description": [
+      "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+      "The plugin is written in Lua and uses Bash and .NET to handle the clipboard. The plugin is cross-platform and works on Windows, Linux and macOS."
+    ],
     "github": "https://github.com/hakonharnes/img-clip.nvim",
+    "youtube": "https://www.youtube.com/watch?v=4crDKASq9Nc",
+    "twitter": "https://twitter.com/Neovim/status/1742586883278864411",
     "feedback": [
       {
         "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
@@ -90,6 +96,11 @@
     "title": "emcc-obf",
     "technologies": ["Docker", "LLVM", "WebAssembly"],
     "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+    "description": [
+      "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+      "The plugin is written in Lua and uses Bash and .NET to handle the clipboard. The plugin is cross-platform and works on Windows, Linux and macOS.",
+      "The plugin is written in Lua and uses Bash and .NET to handle the clipboard. The plugin is cross-platform and works on Windows, Linux and macOS."
+    ],
     "github": "https://github.com/hakonharnes/emcc-obf"
   }
 ]

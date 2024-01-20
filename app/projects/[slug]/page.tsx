@@ -24,10 +24,6 @@ type ProjectImageProps = {
   slug: string;
 };
 
-type ProjectDetailsProps = {
-  title: string;
-};
-
 export default function Page({ params }: ProjectProps) {
   const project = projects.find((p) => p.slug === params.slug);
 
@@ -59,21 +55,61 @@ function ProjectDoesNotExist() {
 
 function ProjectComponent({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-4 py-14">
+    <div className="flex flex-col items-center justify-center gap-8 py-14">
       <ProjectImage media={project.media} slug={project.slug} />
-      <ProjectDetails title={project.title} />
+      <ProjectDetails title={project.title} description={project.description} />
+      <ProjectLinks
+        github={project.github}
+        youtube={project.youtube}
+        twitter={project.twitter}
+      />
       {project.feedback && <FeedbackList feedback={project.feedback} />}
+    </div>
+  );
+}
+
+function ProjectLinks({
+  github,
+  youtube,
+  twitter,
+}: {
+  github: string;
+  youtube?: string;
+  twitter?: string;
+}) {
+  return (
+    <div className="flex flex-col gap-3 sm:flex-row lg:gap-4">
+      {github && (
+        <Button href={github} color="white">
+          GitHub
+        </Button>
+      )}
+      {youtube && (
+        <Button href={youtube} color="white">
+          YouTube
+        </Button>
+      )}
+      {twitter && (
+        <Button href={twitter} color="white">
+          Twitter
+        </Button>
+      )}
     </div>
   );
 }
 
 function FeedbackList({ feedback }: FeedbackListProps) {
   return (
-    <div className="flex flex-col items-center gap-10 pt-20">
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
-        {feedback.map((item) => (
-          <FeedbackItem key={item.url} {...item} />
-        ))}
+    <div className="pt-20">
+      <h2 className="text-3xl text-center font-bold">
+        Here&apos;s what other people are saying
+      </h2>
+      <div className="flex flex-col items-center gap-10 pt-10">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
+          {feedback.map((item) => (
+            <FeedbackItem key={item.url} {...item} />
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -110,10 +146,21 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
   );
 }
 
-function ProjectDetails({ title }: ProjectDetailsProps) {
+type ProjectDetailsProps = {
+  title: string;
+  description: string[];
+};
+
+function ProjectDetails({ title, description }: ProjectDetailsProps) {
   return (
-    <div className="w-full flex flex-col gap-4">
-      <h2 className="text-center text-3xl font-bold">{title}</h2>
+    <div className="w-full flex flex-col gap-4 max-w-5xl">
+      <h2 className="text-center text-4xl font-bold pb-4">{title}</h2>
+      {description &&
+        description.map((paragraph) => (
+          <p key={paragraph} className="text-justify text-lg text-slate-400">
+            {paragraph}
+          </p>
+        ))}
     </div>
   );
 }

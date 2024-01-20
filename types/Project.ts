@@ -5,7 +5,10 @@ export type Project = {
   media: string;
   title: string;
   technologies: string[];
+  description: string[];
   abstract: string;
   github: string;
+  youtube?: string;
+  twitter?: string;
   feedback?: Feedback[];
 };
