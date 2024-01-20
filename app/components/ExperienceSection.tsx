@@ -54,17 +54,19 @@ function ExperienceItem({
 }: ExperienceItemProps) {
   return (
     <div className="flex flex-col gap-1">
-      <div className="flex justify-between">
+      <div className="flex justify-between gap-1">
         <h2 className="text-2xl font-bold">{company}</h2>
-        <span className="text-slate-400 text-lg">{date}</span>
+        <span className="text-lg text-slate-400">{date}</span>
       </div>
-      <div className="flex justify-between">
-        <h3 className="font-semibold text-sky-400 text-xl">{position}</h3>
-        <span className="text-slate-400 text-lg">{location}</span>
+      <div className="flex justify-between gap-1">
+        <h3 className="text-xl font-semibold text-sky-400">{position}</h3>
+        <span className="text-lg text-slate-400">{location}</span>
       </div>
-      <p className="my-2 text-lg text-slate-400">{description}</p>
+      <p className="my-2 max-w-5xl text-justify text-lg text-slate-400">
+        {description}
+      </p>
       <CardList elements={technologies} />
-      <div className="w-full h-[1px] bg-slate-700 opacity-30 mt-5" />
+      <div className="mt-5 h-[1px] w-full bg-slate-700 opacity-30" />
     </div>
   );
 }
