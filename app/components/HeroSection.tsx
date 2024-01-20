@@ -1,4 +1,5 @@
 import Button from "@/components/Button";
+import SocialLinks from "@/components/SocialLinks";
 import { Roboto_Mono } from "next/font/google";
 
 const roboto = Roboto_Mono({ subsets: ["latin"] });
@@ -6,6 +7,7 @@ export default function HeroSection() {
   return (
     <div className="mx-auto flex flex-col items-center justify-between gap-8 py-20 sm:py-24 md:gap-10 lg:flex-row lg:py-32">
       <AboutMe />
+      <Socials />
       <Terminal />
     </div>
   );
@@ -13,7 +15,7 @@ export default function HeroSection() {
 
 function AboutMe() {
   return (
-    <div className="w-full flex flex-1 flex-col items-center gap-2 md:max-w-xl lg:items-start md:gap-3 lg:gap-4">
+    <div className="flex w-full flex-1 flex-col items-center gap-2 md:max-w-xl md:gap-3 lg:items-start lg:gap-4">
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white  md:text-4xl lg:text-6xl">
         Håkon Harnes<span className="text-sky-400">.</span>
       </h1>
@@ -21,12 +23,20 @@ function AboutMe() {
         I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>
-      <div className="w-full flex gap-3 pt-2 mobile:w-auto lg:gap-4">
+      <div className="flex w-full gap-3 pt-2 mobile:w-auto lg:gap-4">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
         <Button href="https://github.com/hakonharnes" color="white">
           GitHub
         </Button>
       </div>
+    </div>
+  );
+}
+
+function Socials() {
+  return (
+    <div className="flex items-center justify-center gap-4 xs:hidden">
+      [<SocialLinks />]
     </div>
   );
 }

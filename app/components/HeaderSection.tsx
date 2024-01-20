@@ -5,7 +5,7 @@ import InternalLink from "@/components/InternalLink";
 
 export default function HeaderSection() {
   return (
-    <nav className="pt-6 flex items-center justify-center sm:justify-between lg:pt-8">
+    <nav className="w-full items-center pt-6 sm:flex sm:justify-between">
       <ul className="hidden sm:block">
         <li>
           <InternalLink href="/">
@@ -13,22 +13,28 @@ export default function HeaderSection() {
           </InternalLink>
         </li>
       </ul>
-      <div className="flex  w-full justify-between xxs:gap-8 sm:w-auto">
-        <ul className="flex w-full items-center justify-between gap-4 mobile:w-auto xxs:gap-8 sm:gap-10 sm:border-r sm:border-r-slate-600 sm:pr-8">
+      <div className="xs:flex">
+        <ul className="flex justify-between sm:gap-6 xs:flex-1 xs:border-r xs:border-r-slate-600 xs:pr-3 sm:pr-4">
           <li>
             <InternalLink href="/#about">About</InternalLink>
           </li>
           <li>
             <InternalLink href="/#projects">Projects</InternalLink>
           </li>
-          <li>
+          <li className="hidden mobile:block">
             <InternalLink href="/#experience">Experience</InternalLink>
           </li>
-          <li>
+          <li className="mobile:hidden">
+            <InternalLink href="/#experience">Exp.</InternalLink>
+          </li>
+          <li className="hidden mobile:block">
             <InternalLink href="/#publications">Publications</InternalLink>
           </li>
+          <li className="mobile:hidden">
+            <InternalLink href="/#publications">Pub.</InternalLink>
+          </li>
         </ul>
-        <ul className="hidden mobile:block">
+        <ul className="hidden xs:block xs:pl-3 sm:pl-4">
           <SocialLinks />
         </ul>
       </div>
