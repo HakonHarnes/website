@@ -14,14 +14,14 @@
     "twitter": "https://twitter.com/Neovim/status/1742586883278864411",
     "feedback": [
       {
+        "comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
         "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
         "source": "Reddit",
         "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
-      },
-      {
-        "comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
-        "source": "Reddit",
-        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
       },
       {
         "comment": "That's amazing! Also synergizes great with 3rd/image.nvim, it's still mind blowing to me that all this is possible in a terminal.",
@@ -29,9 +29,9 @@
         "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzdorf/?utm_source=share&utm_medium=web2x&context=3"
       },
       {
-        "comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
+        "comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
         "source": "Reddit",
-        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
       },
       {
         "comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
