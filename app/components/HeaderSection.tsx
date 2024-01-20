@@ -1,9 +1,6 @@
-import LinkedInIcon from "@/components/LinkedInIcon";
-import GitHubIcon from "@/components/GitHubIcon";
-import EmailIcon from "@/components/EmailIcon";
+import SocialLinks from "@/components/SocialLinks";
 import NameIcon from "@/components/NameIcon";
 
-import ExternalLink from "@/components/ExternalLink";
 import InternalLink from "@/components/InternalLink";
 
 export default function HeaderSection() {
@@ -31,22 +28,8 @@ export default function HeaderSection() {
             <InternalLink href="/#publications">Publications</InternalLink>
           </li>
         </ul>
-        <ul className="hidden gap-3 mobile:flex mobile:items-center mobile:justify-center sm:gap-4">
-          <li>
-            <ExternalLink href="https://www.linkedin.com/in/hakon-harnes/">
-              <LinkedInIcon />
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href="https://www.github.com/hakonharnes">
-              <GitHubIcon />
-            </ExternalLink>
-          </li>
-          <li>
-            <ExternalLink href="mailto:hakon@harnes.co" newTab={false}>
-              <EmailIcon />
-            </ExternalLink>
-          </li>
+        <ul className="hidden mobile:block">
+          <SocialLinks />
         </ul>
       </div>
     </nav>
