@@ -105,7 +105,7 @@ function ProjectLinks({
 
 function FeedbackList({ feedback }: FeedbackListProps) {
   return (
-    <div className="pt-20">
+    <div className="pt-12">
       <h2 className="text-3xl text-center font-bold">
         Here&apos;s what other people are saying
       </h2>
