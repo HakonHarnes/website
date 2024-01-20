@@ -56,13 +56,13 @@ function ProjectDoesNotExist() {
 
 function ProjectComponent({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-8 py-14">
+    <div className="flex flex-col max-w-5xl items-center mx-auto justify-center gap-6 py-14">
       <ProjectImage media={project.media} slug={project.slug} />
       <ProjectDetails
         title={project.title}
         technologies={project.technologies}
-        description={project.description}
       />
+      <ProjectDescription description={project.description} />
       <ProjectLinks
         github={project.github}
         youtube={project.youtube}
@@ -142,7 +142,7 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
 function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Image
-      className="aspect-video w-full max-w-5xl rounded-lg border border-slate-700 object-cover"
+      className="aspect-video w-full rounded-lg border border-slate-700 object-cover"
       src={media}
       width={1000}
       height={1000}
@@ -154,27 +154,30 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
 type ProjectDetailsProps = {
   title: string;
   technologies: string[];
-  description: string[];
 };
 
-function ProjectDetails({
-  title,
-  technologies,
-  description,
-}: ProjectDetailsProps) {
+function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
   return (
-    <div className="w-full flex flex-col justify-center items-center gap-2 max-w-5xl">
-      <h2 className="text-4xl font-bold">{title}</h2>
-      {technologies && <CardList elements={technologies} />}
-      {description && (
-        <div className="py-8 flex flex-col gap-4">
-          {description.map((paragraph, index) => (
-            <p key={index} className="text-justify text-lg text-slate-400">
-              {paragraph}
-            </p>
-          ))}
-        </div>
-      )}
+    <div className="w-full flex flex-col sm:flex-row sm:items-center gap-3">
+      <h2 className="text-3xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
+        {title}
+      </h2>
+      <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
+      <div className="flex-shrink-0">
+        <CardList elements={technologies} />
+      </div>
+    </div>
+  );
+}
+
+function ProjectDescription({ description }: { description: string[] }) {
+  return (
+    <div className="py-5 flex flex-col gap-4">
+      {description.map((paragraph, index) => (
+        <p key={index} className="text-justify text-lg text-slate-400">
+          {paragraph}
+        </p>
+      ))}
     </div>
   );
 }
