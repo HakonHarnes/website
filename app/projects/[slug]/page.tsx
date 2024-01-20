@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "@/components/Card";
+import CardList from "@/components/CardList";
 import Button from "@/components/Button";
 import projects from "../projects.json";
 import { Project } from "@/types/Project";
@@ -57,7 +58,11 @@ function ProjectComponent({ project }: { project: Project }) {
   return (
     <div className="flex flex-col items-center justify-center gap-8 py-14">
       <ProjectImage media={project.media} slug={project.slug} />
-      <ProjectDetails title={project.title} description={project.description} />
+      <ProjectDetails
+        title={project.title}
+        technologies={project.technologies}
+        description={project.description}
+      />
       <ProjectLinks
         github={project.github}
         youtube={project.youtube}
@@ -148,19 +153,28 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
 
 type ProjectDetailsProps = {
   title: string;
+  technologies: string[];
   description: string[];
 };
 
-function ProjectDetails({ title, description }: ProjectDetailsProps) {
+function ProjectDetails({
+  title,
+  technologies,
+  description,
+}: ProjectDetailsProps) {
   return (
-    <div className="w-full flex flex-col gap-4 max-w-5xl">
-      <h2 className="text-center text-4xl font-bold pb-4">{title}</h2>
-      {description &&
-        description.map((paragraph) => (
-          <p key={paragraph} className="text-justify text-lg text-slate-400">
-            {paragraph}
-          </p>
-        ))}
+    <div className="w-full flex flex-col justify-center items-center gap-2 max-w-5xl">
+      <h2 className="text-4xl font-bold">{title}</h2>
+      {technologies && <CardList elements={technologies} />}
+      {description && (
+        <div className="py-8 flex flex-col gap-4">
+          {description.map((paragraph, index) => (
+            <p key={index} className="text-justify text-lg text-slate-400">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

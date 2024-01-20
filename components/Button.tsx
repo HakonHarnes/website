@@ -29,7 +29,12 @@ export default function Button({ href, color, children }: ButtonProps) {
   const className = buttonColorClasses(color || "sky");
 
   return (
-    <Link href={href} className={className}>
+    <Link
+      href={href}
+      className={className}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       {children}
     </Link>
   );
