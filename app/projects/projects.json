@@ -4,7 +4,7 @@
     "media": "/img-clip.gif",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
-    "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+    "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 600 users and nearly 250 stars on GitHub.",
     "description": [
       "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Effortlessly embed images into any markup language, like LaTeX, Markdown or Typst. Paste images directly from the system clipboard. Drag and drop images from your web browser or file explorer to embed them. Embed images as files, URLs, or directly as Base64. Configurable templates with cursor positioning and figure labels. Default templates for widely-used markup languages like LaTeX, Markdown and Typst. Cross-compatibility with Linux, Windows, and MacOS.",
       "The plugin is written in Lua and uses Bash and .NET to handle the clipboard. The plugin is cross-platform and works on Windows, Linux and macOS. It has gained a lot of traction in the community, with over 200 stars on GitHub and 600 users."
@@ -95,7 +95,7 @@
     "media": "/wasm.jpg",
     "title": "emcc-obf",
     "technologies": ["Docker", "LLVM", "WebAssembly"],
-    "abstract": "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
+    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first compiler that is able to obfuscate WebAssembly. Based on the Obfuscator-LLVM project, built with Docker.",
     "description": [
       "Cross-platform Neovim plugin for embeding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 200 stars on GitHub and 600 users.",
       "The plugin is written in Lua and uses Bash and .NET to handle the clipboard. The plugin is cross-platform and works on Windows, Linux and macOS.",
