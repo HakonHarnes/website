@@ -11,7 +11,7 @@ export default function ExperienceSection() {
           position="Software engineer"
           date="2022 - Present"
           location="Trondheim"
-          description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
+          description=""
           technologies={["Python", "Django", "Pytest"]}
         />
         <ExperienceItem
@@ -19,7 +19,7 @@ export default function ExperienceSection() {
           position="Internship"
           date="2022 - Present"
           location="Trondheim"
-          description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
+          description=""
           technologies={["Python", "Django", "Pytest"]}
         />
         <ExperienceItem
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
           position="Teaching assistant"
           date="2022 - Present"
           location="Trondheim"
-          description="I help build and scale Google Photos. Increased throughput of our primary services by 70%. Migrated backend service from Java to Go. Also helped make it look prettier. Also helped make it look prettier. Hello this is just dummy text."
+          description=""
           technologies={["Python", "Django", "Pytest"]}
         />
       </div>
