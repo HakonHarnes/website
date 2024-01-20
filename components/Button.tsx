@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type ButtonColors = "sky" | "white";
+type ButtonColors = "sky" | "white" | "youtube" | "twitter";
 
 type ButtonProps = {
   href: string;
@@ -15,6 +15,10 @@ function buttonColorClasses(color: ButtonColors) {
   switch (color) {
     case "white":
       return `${baseClasses} bg-white hover:bg-gray-300 text-black`;
+    case "youtube":
+      return `${baseClasses} bg-[#FF0000] hover:bg-[#c90000] text-white`;
+    case "twitter":
+      return `${baseClasses} bg-[#1D9BF0] hover:bg-[#1880c7] text-white`;
     case "sky":
     default:
       return `${baseClasses} bg-sky-500 hover:bg-sky-400 text-white`;

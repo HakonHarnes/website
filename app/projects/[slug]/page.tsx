@@ -85,12 +85,12 @@ function ProjectLinks({
         </Button>
       )}
       {youtube && (
-        <Button href={youtube} color="white">
+        <Button href={youtube} color="youtube">
           YouTube
         </Button>
       )}
       {twitter && (
-        <Button href={twitter} color="white">
+        <Button href={twitter} color="twitter">
           Twitter
         </Button>
       )}
