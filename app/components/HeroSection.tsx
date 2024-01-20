@@ -27,7 +27,7 @@ function AboutMe() {
         Håkon Harnes<span className="text-sky-400">.</span>
       </h1>
       <p className="text-justify text-xl text-slate-400 md:max-w-md lg:text-2xl">
-        I%apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
+        I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>
       <div className="flex w-full justify-center gap-3 pt-2 lg:gap-4 lg:justify-start">
