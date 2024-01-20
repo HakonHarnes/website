@@ -14,7 +14,7 @@ export default function HeaderSection() {
         </li>
       </ul>
       <div className="xs:flex">
-        <ul className="flex justify-between sm:gap-6 xs:flex-1 xs:border-r xs:border-r-slate-600 xs:pr-3 sm:pr-4">
+        <ul className="flex justify-between sm:gap-6 md:gap-10 xs:flex-1 xs:border-r xs:border-r-slate-600 xs:pr-3 sm:pr-4 md:pr-5">
           <li>
             <InternalLink href="/#about">About</InternalLink>
           </li>
@@ -34,7 +34,7 @@ export default function HeaderSection() {
             <InternalLink href="/#publications">Pub.</InternalLink>
           </li>
         </ul>
-        <ul className="hidden xs:block xs:pl-3 sm:pl-4">
+        <ul className="hidden xs:block xs:pl-3 sm:pl-4 sm:pl-5">
           <SocialLinks />
         </ul>
       </div>
