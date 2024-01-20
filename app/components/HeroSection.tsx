@@ -52,16 +52,25 @@ type TerminalProps = {
 function Terminal({ commands }: TerminalProps) {
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl `}
+      className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl`}
     >
       {commands.map((command, index) => (
         <>
-          <div key={index}>
+          <div
+            key={index}
+            className={`${index !== 0 ? "pt-4" : ""} ${
+              index === commands.length - 1 ? "hidden sm:block" : ""
+            }`}
+          >
             <span className="text-slate-300">$ </span>
             <span>echo </span>
             <span className="text-sky-200">{command.variable}</span>
           </div>
-          <div className={index !== commands.length - 1 ? "pb-4" : ""}>
+          <div
+            className={`${
+              index === commands.length - 1 ? "hidden sm:block" : ""
+            }`}
+          >
             {command.value}
           </div>
         </>
