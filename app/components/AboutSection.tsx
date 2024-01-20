@@ -1,4 +1,5 @@
 import CardList from "@/components/CardList";
+import SocialLinks from "@/components/SocialLinks";
 import { SectionHeader } from "@/components/SectionHeader";
 
 export default function AboutSection() {
@@ -25,10 +26,22 @@ export default function AboutSection() {
             nascetur pellentesque! Tempor nec suscipit curae facilisis massa
             nullam mus augue leo.
           </p>
+          <MyLinks />
         </div>
         <Skills />
       </div>
     </section>
+  );
+}
+
+function MyLinks() {
+  return (
+    <div className="flex items-center gap-3">
+      <span className="text-lg font-medium text-slate-400 pt-[5px]">
+        Reach me at:
+      </span>
+      <SocialLinks />
+    </div>
   );
 }
 
