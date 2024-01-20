@@ -159,9 +159,7 @@ type ProjectDetailsProps = {
 function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
   return (
     <div className="w-full flex flex-col sm:flex-row sm:items-center gap-3">
-      <h2 className="text-3xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
-        {title}
-      </h2>
+      <h2 className="text-3xl font-bold text-nowrap">{title}</h2>
       <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
