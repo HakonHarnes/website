@@ -25,12 +25,13 @@ export default function AboutSection() {
             gradute in June 2024.
           </p>
           <p>
-            Back in 2016, I decided to try my hand at programming a snake game
-            after watching a youtube video. That’s when I tumbled head first
-            into the rabbit hole of programming. Fast-forward to today, and I’ve
-            just finished my at the Norwegian University of Science and
-            Technology. I am currently broadening my knowledge at University of
-            Tromsø where I am studying managment.
+            Throughout the years, I&apos;ve gained experience in a diverse set
+            of programming languages. I&apos;d say I&apos;m most proficient in
+            Python and backend development. However, I&apos;m no stranger to
+            frontend development and design either, as evidenced by this
+            website! Moreover, I enjoy trying out cutting-edge technologies,
+            like Rust and WebAssembly. You&apos;ll often find me in the
+            terminal, programming in Neovim. I also use Arch Linux, by the way.
           </p>
           <p>I am currently looking for new job opportunities.</p>
           <MyLinks />
