@@ -51,7 +51,7 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Link
       href={`projects/${slug}`}
-      className="shadow-lg transform hover:scale-[1.015] transition-transform duration-200"
+      className="shadow-2xl transform hover:scale-[1.015] transition-transform duration-200"
     >
       <Image
         className="w-full aspect-video rounded-lg border border-slate-700 object-cover"
