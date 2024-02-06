@@ -9,7 +9,7 @@ export default function ExperienceSection() {
         <ExperienceItem
           company="NTNUi Sprint"
           position="Software engineer"
-          date="2022 - Present"
+          date="September 2022 - May 2023"
           location="Trondheim"
           description=""
           technologies={["Python", "Django", "Pytest"]}
@@ -17,18 +17,27 @@ export default function ExperienceSection() {
         <ExperienceItem
           company="Variant"
           position="Internship"
-          date="2022 - Present"
+          date="June 2022 - August 2022"
           location="Trondheim"
           description=""
-          technologies={["Python", "Django", "Pytest"]}
+          technologies={["TypeScript", "Next.js"]}
         />
         <ExperienceItem
           company="NTNU"
           position="Teaching assistant"
-          date="2022 - Present"
+          date="January 2022 - December 2022"
           location="Trondheim"
           description=""
-          technologies={["Python", "Django", "Pytest"]}
+          technologies={[
+            "Python",
+            "Java",
+            "JavaScript",
+            "Rust",
+            "Go",
+            "C",
+            "C#",
+            "C++",
+          ]}
         />
       </div>
     </section>
