@@ -9,7 +9,7 @@ export default function ExperienceSection() {
         <ExperienceItem
           company="NTNUi Sprint"
           position="Software engineer"
-          date="September 2022 - May 2023"
+          date="Sep 2022 - May 2023"
           location="Trondheim"
           description=""
           technologies={["Python", "Django", "Pytest"]}
@@ -17,7 +17,7 @@ export default function ExperienceSection() {
         <ExperienceItem
           company="Variant"
           position="Internship"
-          date="June 2022 - August 2022"
+          date="Jun 2022 - Aug 2022"
           location="Trondheim"
           description=""
           technologies={["TypeScript", "Next.js"]}
@@ -25,7 +25,7 @@ export default function ExperienceSection() {
         <ExperienceItem
           company="NTNU"
           position="Teaching assistant"
-          date="January 2022 - December 2022"
+          date="Jan 2022 - Dec 2022"
           location="Trondheim"
           description=""
           technologies={[
