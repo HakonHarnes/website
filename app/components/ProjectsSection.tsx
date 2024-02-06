@@ -14,7 +14,7 @@ export default function ProjectsSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Projects" />
-      <div className="grid gap-14 lg:grid-cols-2 pt-2">
+      <div className="grid gap-14 xl:gap-24 lg:grid-cols-2 pt-2">
         {projects.map((project) => (
           <ProjectComponent key={project.slug} project={project} />
         ))}
@@ -51,7 +51,7 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Link
       href={`projects/${slug}`}
-      className="shadow-2xl transform hover:scale-[1.015] transition-transform duration-200"
+      className="shadow-2xl transform hover:scale-[1.010] transition-transform duration-200"
     >
       <Image
         className="w-full aspect-video rounded-lg border border-slate-700 object-cover"
