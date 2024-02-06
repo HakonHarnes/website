@@ -10,7 +10,7 @@ export default function ExperienceSection() {
           company="NTNUi Sprint"
           position="Software engineer"
           date="Sep 2022 - May 2023"
-          location="Trondheim"
+          location="Trondheim, Norway"
           description=""
           technologies={["Python", "Django", "Pytest"]}
         />
@@ -18,7 +18,7 @@ export default function ExperienceSection() {
           company="Variant"
           position="Internship"
           date="Jun 2022 - Aug 2022"
-          location="Trondheim"
+          location="Trondheim, Norway"
           description=""
           technologies={["TypeScript", "Next.js"]}
         />
@@ -26,7 +26,7 @@ export default function ExperienceSection() {
           company="NTNU"
           position="Teaching assistant"
           date="Jan 2022 - Dec 2022"
-          location="Trondheim"
+          location="Trondheim, Norway"
           description=""
           technologies={[
             "Python",
