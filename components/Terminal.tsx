@@ -30,7 +30,13 @@ export default function Terminal({ commands }: TerminalProps) {
           className={`${index !== commands.length - 1 ? "mb-4" : ""}`}
         >
           <div className="flex items-center">
-            <span className="text-slate-300 mr-1">$</span>
+            <span
+              className={`text-slate-300 mr-1 ${
+                index > activeCommandIndex ? "invisible" : "visible"
+              }`}
+            >
+              $
+            </span>
             <ReactTyped
               strings={[
                 `echo <span class="text-sky-200">${command.variable}</span>`,
@@ -44,7 +50,7 @@ export default function Terminal({ commands }: TerminalProps) {
                     `output-${index}`,
                   );
                   if (outputElement) {
-                    outputElement.style.visibility = "visible";
+                    outputElement.className = "visible";
                   }
                   setActiveCommandIndex(index + 1);
                 }, outputDelay);
@@ -52,11 +58,11 @@ export default function Terminal({ commands }: TerminalProps) {
             />
             <span
               className={`w-2 h-5 ml-[2px] bg-slate-300 ${
-                index === activeCommandIndex ? "inline-block" : "hidden"
+                index === activeCommandIndex ? "visible" : "invisible"
               }`}
             ></span>
           </div>
-          <div id={`output-${index}`} style={{ visibility: "hidden" }}>
+          <div id={`output-${index}`} className="invisible">
             {command.value}
           </div>
         </div>
