@@ -22,15 +22,16 @@ export default function PublicationsSection() {
         />
         <PublicationItem
           title="SoK: Analysis techniques for WebAssembly"
-          journal="Pre-print"
+          journal="MDPI Future Internet"
           date="2024"
-          link="https://arxiv.org/abs/2401.05943"
-          abstract="WebAssembly is a low-level bytecode language that allows high-level languages like C, C++, and Rust to be executed in the browser at near-native performance. In recent years, WebAssembly has gained widespread adoption is now natively supported by all modern browsers. However, vulnerabilities in memory-unsafe languages, like C and C++, can translate into vulnerabilities in WebAssembly binaries. Unfortunately, most WebAssembly binaries are compiled from such memory-unsafe languages, and these vulnerabilities have been shown to be practical in real-world scenarios. WebAssembly smart contracts have also been found to be vulnerable, causing significant financial loss. Additionally, WebAssembly has been used for malicious purposes like cryptojacking. To address these issues, several analysis techniques for WebAssembly binaries have been proposed. In this paper, we conduct a comprehensive literature review of these techniques and categorize them based on their analysis strategy and objectives. Furthermore, we compare and evaluate the techniques using quantitative data, highlighting their strengths and weaknesses. In addition, one of the main contributions of this paper is the identification of future research directions based on the thorough literature review conducted."
+          link="https://www.mdpi.com/1999-5903/16/3/84"
+          abstract="WebAssembly is a low-level bytecode language that enables high-level languages like C, C++, and Rust to be executed in the browser at near-native performance. In recent years, WebAssembly has gained widespread adoption and is now natively supported by all modern browsers. Despite its benefits, WebAssembly has introduced significant security challenges, primarily due to vulnerabilities inherited from memory-unsafe source languages. Moreover, the use of WebAssembly extends beyond traditional web applications to smart contracts on blockchain platforms, where vulnerabilities have led to significant financial losses. WebAssembly has also been used for malicious purposes, like cryptojacking, where website visitors’ hardware resources are used for crypto mining without their consent. To address these issues, several analysis techniques for WebAssembly binaries have been proposed. This paper presents a systematic review of these analysis techniques, focusing on vulnerability analysis, cryptojacking detection, and smart contract security. The analysis techniques are categorized into static, dynamic, and hybrid methods, evaluating their strengths and weaknesses based on quantitative data. Our findings reveal that static techniques are efficient but may struggle with complex binaries, while dynamic techniques offer better detection at the cost of increased overhead. Hybrid approaches, which merge the strengths of static and dynamic methods, are not extensively used in the literature and emerge as a promising direction for future research. Lastly, this paper identifies potential future research directions based on the state of the current literature."
           keywords={[
             "WebAssembly",
-            "Analysis techniques",
-            "Vulnerability detection",
+            "Vulnerability analysis",
             "Browser security",
+            "Cryptojacking",
+            "Smart contracts",
           ]}
         />
       </div>
