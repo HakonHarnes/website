@@ -16,8 +16,8 @@ type TerminalProps = {
 };
 
 export default function Terminal({ commands }: TerminalProps) {
-  const commandDelay = 1900; // Delay between each command in milliseconds
-  const outputDelay = 300; // Delay before showing the output in milliseconds
+  const commandDelay = 1800; // Delay between each command in milliseconds
+  const outputDelay = 250; // Delay before showing the output in milliseconds
   const [activeCommandIndex, setActiveCommandIndex] = useState(0);
 
   return (
