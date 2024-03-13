@@ -11,7 +11,7 @@ export default function ExperienceSection() {
           position="Software engineer"
           date="Sep 2022 - May 2023"
           location="Trondheim, Norway"
-          description="Developed and maintained the membership system for Norway’s largest student organization with over 15,000 members."
+          description="Developed and maintained the membership system for Norway’s largest student organization with over 15,000 members. Optimized the test scripts and worked on payment integration. Collaborated within a 20 person team, extensively using GitHub for pull requests and code reviews."
           technologies={["Python", "Django", "Pytest"]}
         />
         <ExperienceItem
@@ -19,7 +19,7 @@ export default function ExperienceSection() {
           position="Internship"
           date="Jun 2022 - Aug 2022"
           location="Trondheim, Norway"
-          description=""
+          description="Developed a responsive web application for inspectors at the Norwegian Public Roads Administration, enabling on-site photo editing and annotation using tablets. Conducted in-depth user interviews to gather requirements. Collaborated with a cross-functional team using agile methodologies."
           technologies={["TypeScript", "Next.js"]}
         />
         <ExperienceItem
@@ -27,7 +27,7 @@ export default function ExperienceSection() {
           position="Teaching assistant"
           date="Jan 2022 - Dec 2022"
           location="Trondheim, Norway"
-          description=""
+          description="Evaluated assignments and assisted over 100 students in network programming and security. Taught students various advanced topics, including threaded programming, network protocols, reverse engineering, and cryptography."
           technologies={[
             "Python",
             "Java",
