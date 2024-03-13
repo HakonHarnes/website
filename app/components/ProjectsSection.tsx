@@ -1,5 +1,5 @@
 import { Project } from "@/types/Project";
-import projects from "../projects/projects.json";
+import projects from "@/data/projects.json";
 
 import CardList from "@/components/CardList";
 import InternalLink from "@/components/InternalLink";

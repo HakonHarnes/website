@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 import CardList from "@/components/CardList";
 import Button from "@/components/Button";
 import ExternalLink from "@/components/ExternalLink";
-import projects from "../projects.json";
+import projects from "@/data/projects.json";
 import { Project } from "@/types/Project";
 import { Feedback } from "@/types/Feedback";
 
