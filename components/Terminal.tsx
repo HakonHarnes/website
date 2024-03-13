@@ -15,9 +15,10 @@ type TerminalProps = {
   commands: Command[];
 };
 
+const COMMAND_DELAY = 1800;
+const OUTPUT_DELAY = 250;
+
 export default function Terminal({ commands }: TerminalProps) {
-  const commandDelay = 1800;
-  const outputDelay = 250;
   const [activeCommandIndex, setActiveCommandIndex] = useState(0);
 
   return (
@@ -43,17 +44,11 @@ export default function Terminal({ commands }: TerminalProps) {
               ]}
               typeSpeed={45}
               showCursor={false}
-              startDelay={index * commandDelay}
+              startDelay={index * COMMAND_DELAY}
               onComplete={() => {
                 setTimeout(() => {
-                  const outputElement = document.getElementById(
-                    `output-${index}`,
-                  );
-                  if (outputElement) {
-                    outputElement.className = "visible";
-                  }
                   setActiveCommandIndex(index + 1);
-                }, outputDelay);
+                }, OUTPUT_DELAY);
               }}
             />
             <span
@@ -62,7 +57,7 @@ export default function Terminal({ commands }: TerminalProps) {
               }`}
             ></span>
           </div>
-          <div id={`output-${index}`} className="invisible">
+          <div className={index < activeCommandIndex ? "visible" : "invisible"}>
             {command.value}
           </div>
         </div>
