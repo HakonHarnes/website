@@ -2,6 +2,7 @@ import Image from "next/image";
 import Card from "@/components/Card";
 import CardList from "@/components/CardList";
 import Button from "@/components/Button";
+import ExternalLink from "@/components/ExternalLink";
 import projects from "../projects.json";
 import { Project } from "@/types/Project";
 import { Feedback } from "@/types/Feedback";
@@ -41,7 +42,7 @@ function ProjectDoesNotExist() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white md:text-4xl lg:text-6xl">
         Project does not exist (yet)
       </h1>
-      <p className="  text-xl text-slate-400 lg:text-2xl">
+      <p className="text-xl text-slate-400 lg:text-2xl">
         But maybe I can help you with your project?
       </p>
       <div className="flex gap-3 lg:gap-4">
@@ -56,7 +57,7 @@ function ProjectDoesNotExist() {
 
 function ProjectComponent({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col max-w-5xl items-center mx-auto justify-center gap-6 py-14">
+    <div className="flex flex-col max-w-5xl items-center mx-auto justify-center gap-6 py-14 text-lg">
       <ProjectImage media={project.media} slug={project.slug} />
       <ProjectDetails
         title={project.title}
@@ -83,22 +84,11 @@ function ProjectLinks({
   twitter?: string;
 }) {
   return (
-    <div className="w-full justify-center items-center flex flex-col gap-3 xs:flex-row lg:gap-4">
-      {github && (
-        <Button href={github} color="white">
-          GitHub
-        </Button>
-      )}
-      {youtube && (
-        <Button href={youtube} color="red">
-          YouTube
-        </Button>
-      )}
-      {twitter && (
-        <Button href={twitter} color="sky">
-          Twitter
-        </Button>
-      )}
+    <div className="flex gap-2 w-full">
+      <span className="text-slate-400 font-semibold">Links:</span>
+      {github && <ExternalLink href={github}>GitHub</ExternalLink>}
+      {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
+      {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}
     </div>
   );
 }
@@ -170,9 +160,9 @@ function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
 
 function ProjectDescription({ description }: { description: string[] }) {
   return (
-    <div className="py-5 flex flex-col gap-4">
+    <div className="flex flex-col gap-4">
       {description.map((paragraph, index) => (
-        <p key={index} className="  text-lg text-slate-400">
+        <p key={index} className="text-lg text-slate-400">
           {paragraph}
         </p>
       ))}
