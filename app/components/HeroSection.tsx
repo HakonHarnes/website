@@ -53,12 +53,18 @@ type TerminalProps = {
 };
 
 function Terminal({ commands }: TerminalProps) {
+  const commandDelay = 1900; // Delay between each command in milliseconds
+  const outputDelay = 300; // Delay before showing the output in milliseconds
+
   return (
     <div
       className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl`}
     >
       {commands.map((command, index) => (
-        <div key={index} className="mb-4">
+        <div
+          key={index}
+          className={`${index !== commands.length - 1 ? "mb-4" : ""}`}
+        >
           <div className="flex items-center">
             <span
               id={`caret-${index}`}
@@ -71,9 +77,9 @@ function Terminal({ commands }: TerminalProps) {
               strings={[
                 `echo <span class="text-sky-200">${command.variable}</span>`,
               ]}
-              typeSpeed={50}
+              typeSpeed={45}
               showCursor={false}
-              startDelay={index * 2000}
+              startDelay={index * commandDelay}
               onComplete={() => {
                 setTimeout(() => {
                   const outputElement = document.getElementById(
@@ -88,7 +94,7 @@ function Terminal({ commands }: TerminalProps) {
                   if (nextCaretElement) {
                     nextCaretElement.style.visibility = "visible";
                   }
-                }, 500);
+                }, outputDelay);
               }}
             />
           </div>
