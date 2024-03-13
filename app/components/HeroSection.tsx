@@ -68,7 +68,9 @@ function Terminal({ commands }: TerminalProps) {
               $
             </span>
             <ReactTyped
-              strings={[`echo ${command.variable}`]}
+              strings={[
+                `echo <span class="text-sky-200">${command.variable}</span>`,
+              ]}
               typeSpeed={50}
               showCursor={false}
               startDelay={index * 2000}
