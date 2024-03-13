@@ -6,7 +6,7 @@ function linkClasses(type: LinkType) {
       return "fill-white stroke-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400";
     case "text":
     default:
-      return "fill-white font-semibold border-b-2 border-b-sky-400 hover:text-sky-400 hover:border-b-white";
+      return "fill-white font-semibold border-b-2 border-b-sky-400 hover:text-sky-400";
   }
 }
 
