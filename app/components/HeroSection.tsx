@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { ReactTyped } from "react-typed";
 import Button from "@/components/Button";
 import { Roboto_Mono } from "next/font/google";
 
@@ -55,25 +58,42 @@ function Terminal({ commands }: TerminalProps) {
       className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl`}
     >
       {commands.map((command, index) => (
-        <>
-          <div
-            key={index}
-            className={`${index !== 0 ? "pt-4" : ""} ${
-              index === commands.length - 1 ? "hidden sm:block" : ""
-            }`}
-          >
-            <span className="text-slate-300">$ </span>
-            <span>echo </span>
-            <span className="text-sky-200">{command.variable}</span>
+        <div key={index} className="mb-4">
+          <div className="flex items-center">
+            <span
+              id={`caret-${index}`}
+              className="text-slate-300 mr-1"
+              style={{ visibility: index === 0 ? "visible" : "hidden" }}
+            >
+              $
+            </span>
+            <ReactTyped
+              strings={[`echo ${command.variable}`]}
+              typeSpeed={50}
+              showCursor={false}
+              startDelay={index * 2000}
+              onComplete={() => {
+                setTimeout(() => {
+                  const outputElement = document.getElementById(
+                    `output-${index}`,
+                  );
+                  if (outputElement) {
+                    outputElement.style.visibility = "visible";
+                  }
+                  const nextCaretElement = document.getElementById(
+                    `caret-${index + 1}`,
+                  );
+                  if (nextCaretElement) {
+                    nextCaretElement.style.visibility = "visible";
+                  }
+                }, 500);
+              }}
+            />
           </div>
-          <div
-            className={`${
-              index === commands.length - 1 ? "hidden sm:block" : ""
-            }`}
-          >
+          <div id={`output-${index}`} style={{ visibility: "hidden" }}>
             {command.value}
           </div>
-        </>
+        </div>
       ))}
     </div>
   );
