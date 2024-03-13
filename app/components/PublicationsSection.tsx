@@ -52,24 +52,30 @@ function PublicationItem({
   title,
   journal,
   date,
-  doi: doi,
+  doi,
   abstract,
-  keywords: technologies,
+  keywords,
 }: PublicationItemProps) {
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-2 sm:gap-1">
       <div className="flex justify-between gap-1">
         <h2 className="text-2xl font-bold">{title}</h2>
-        <span className="text-lg text-slate-400">{date}</span>
+        <span className="text-lg text-slate-400 hidden sm:inline-block">
+          {date}
+        </span>
       </div>
+      <ExternalLink className="w-fit sm:hidden" href={doi}>
+        <h3 className="text-lg">{doi}</h3>
+      </ExternalLink>
       <div className="flex justify-between gap-1">
         <h3 className="text-xl font-semibold text-sky-400">{journal}</h3>
-        <ExternalLink href={doi}>
+        <span className="text-lg text-slate-400 sm:hidden">{date}</span>
+        <ExternalLink className="hidden sm:inline-block" href={doi}>
           <h3 className="text-lg">{doi}</h3>
         </ExternalLink>
       </div>
       <p className="my-2 text-lg text-slate-400">{abstract}</p>
-      <CardList elements={technologies} />
+      <CardList elements={keywords} />
       <div className="mt-5 h-[1px] w-full bg-slate-700 opacity-30" />
     </div>
   );
