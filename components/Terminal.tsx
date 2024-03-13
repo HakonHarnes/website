@@ -15,6 +15,7 @@ type TerminalProps = {
   commands: Command[];
 };
 
+const INITIAL_DELAY = 500;
 const COMMAND_DELAY = 1800;
 const OUTPUT_DELAY = 250;
 
@@ -44,7 +45,7 @@ export default function Terminal({ commands }: TerminalProps) {
               ]}
               typeSpeed={45}
               showCursor={false}
-              startDelay={index * COMMAND_DELAY}
+              startDelay={INITIAL_DELAY + index * COMMAND_DELAY}
               onComplete={() => {
                 setTimeout(() => {
                   setActiveCommandIndex(index + 1);
