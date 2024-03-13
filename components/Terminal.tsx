@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { ReactTyped } from "react-typed";
 import { Roboto_Mono } from "next/font/google";
 
@@ -17,6 +18,7 @@ type TerminalProps = {
 export default function Terminal({ commands }: TerminalProps) {
   const commandDelay = 1900; // Delay between each command in milliseconds
   const outputDelay = 300; // Delay before showing the output in milliseconds
+  const [activeCommandIndex, setActiveCommandIndex] = useState(0);
 
   return (
     <div
@@ -28,13 +30,7 @@ export default function Terminal({ commands }: TerminalProps) {
           className={`${index !== commands.length - 1 ? "mb-4" : ""}`}
         >
           <div className="flex items-center">
-            <span
-              id={`caret-${index}`}
-              className="text-slate-300 mr-1"
-              style={{ visibility: index === 0 ? "visible" : "hidden" }}
-            >
-              $
-            </span>
+            <span className="text-slate-300 mr-1">$</span>
             <ReactTyped
               strings={[
                 `echo <span class="text-sky-200">${command.variable}</span>`,
@@ -50,15 +46,15 @@ export default function Terminal({ commands }: TerminalProps) {
                   if (outputElement) {
                     outputElement.style.visibility = "visible";
                   }
-                  const nextCaretElement = document.getElementById(
-                    `caret-${index + 1}`,
-                  );
-                  if (nextCaretElement) {
-                    nextCaretElement.style.visibility = "visible";
-                  }
+                  setActiveCommandIndex(index + 1);
                 }, outputDelay);
               }}
             />
+            <span
+              className={`w-2 h-5 bg-white ml-1 ${
+                index === activeCommandIndex ? "inline-block" : "hidden"
+              }`}
+            ></span>
           </div>
           <div id={`output-${index}`} style={{ visibility: "hidden" }}>
             {command.value}
