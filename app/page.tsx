@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
@@ -10,10 +13,16 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <AboutSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <PublicationsSection />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 1.5 }}
+      >
+        <AboutSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <PublicationsSection />
+      </motion.div>
     </>
   );
 }

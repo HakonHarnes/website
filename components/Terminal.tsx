@@ -15,7 +15,7 @@ type TerminalProps = {
   commands: Command[];
 };
 
-const INITIAL_DELAY = 500;
+const INITIAL_DELAY = 3000;
 const COMMAND_DELAY = 1800;
 const OUTPUT_DELAY = 250;
 
@@ -24,7 +24,7 @@ export default function Terminal({ commands }: TerminalProps) {
 
   return (
     <div
-      className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1 sm:max-w-xl`}
+      className={`${roboto.className} bg-slate-950 w-full p-5 rounded sm:p-8 sm:rounded-lg flex-1`}
     >
       {commands.map((command, index) => (
         <div
