@@ -11,7 +11,7 @@ export default function ExperienceSection() {
           position="Software engineer"
           date="Sep 2022 - May 2023"
           location="Trondheim, Norway"
-          description=""
+          description="Developed and maintained the membership system for Norway’s largest student organization with over 15,000 members."
           technologies={["Python", "Django", "Pytest"]}
         />
         <ExperienceItem
@@ -71,7 +71,7 @@ function ExperienceItem({
         <h3 className="text-xl font-semibold text-sky-400">{position}</h3>
         <span className="text-lg text-slate-400">{location}</span>
       </div>
-      <p className="my-2 text-justify text-lg text-slate-400">{description}</p>
+      <p className="my-2   text-lg text-slate-400">{description}</p>
       <CardList elements={technologies} />
       <div className="mt-5 h-[1px] w-full bg-slate-700 opacity-30" />
     </div>

@@ -41,7 +41,7 @@ function ProjectDoesNotExist() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white md:text-4xl lg:text-6xl">
         Project does not exist (yet)
       </h1>
-      <p className="text-justify text-xl text-slate-400 lg:text-2xl">
+      <p className="  text-xl text-slate-400 lg:text-2xl">
         But maybe I can help you with your project?
       </p>
       <div className="flex gap-3 lg:gap-4">
@@ -172,7 +172,7 @@ function ProjectDescription({ description }: { description: string[] }) {
   return (
     <div className="py-5 flex flex-col gap-4">
       {description.map((paragraph, index) => (
-        <p key={index} className="text-justify text-lg text-slate-400">
+        <p key={index} className="  text-lg text-slate-400">
           {paragraph}
         </p>
       ))}

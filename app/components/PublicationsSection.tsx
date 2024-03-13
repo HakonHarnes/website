@@ -66,7 +66,7 @@ function PublicationItem({
       <div className="flex justify-between gap-1">
         <h3 className="text-xl font-semibold text-sky-400">{journal}</h3>
       </div>
-      <p className="my-2 text-justify text-lg text-slate-400">{abstract}</p>
+      <p className="my-2   text-lg text-slate-400">{abstract}</p>
       <CardList elements={technologies} />
       <div className="mt-5 h-[1px] w-full bg-slate-700 opacity-30" />
     </div>

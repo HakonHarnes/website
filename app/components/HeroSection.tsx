@@ -26,7 +26,7 @@ function AboutMe() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white md:text-4xl lg:text-6xl">
         Håkon Harnes<span className="text-sky-400">.</span>
       </h1>
-      <p className="text-justify text-xl text-slate-400 md:max-w-md lg:text-2xl">
+      <p className="  text-xl text-slate-400 md:max-w-md lg:text-2xl">
         I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>

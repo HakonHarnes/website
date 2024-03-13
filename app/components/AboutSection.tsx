@@ -8,7 +8,7 @@ export default function AboutSection() {
     <section>
       <SectionHeader title="About" />
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
-        <div className="flex flex-col gap-4 text-lg text-slate-400 text-justify">
+        <div className="flex flex-col gap-4 text-lg text-slate-400  ">
           <p>
             Back in 2016, I decided to try my hand at programming a snake game
             after watching a{" "}

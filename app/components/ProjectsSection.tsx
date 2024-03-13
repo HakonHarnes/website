@@ -91,7 +91,7 @@ type ProjectDescriptionProps = {
 };
 
 function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
-  return <p className="text-lg text-justify text-slate-400">{abstract}</p>;
+  return <p className="text-lg   text-slate-400">{abstract}</p>;
 }
 
 type ProjectLinksProps = {
