@@ -10,7 +10,7 @@ export default function InternalLink({
   return (
     <Link
       href={href}
-      className="fill-white font-semibold hover:fill-sky-400 hover:text-sky-400"
+      className="fill-white text-white font-semibold hover:fill-sky-400 hover:text-sky-400"
     >
       {children}
     </Link>

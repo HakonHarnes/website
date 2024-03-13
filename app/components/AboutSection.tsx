@@ -2,6 +2,7 @@ import CardList from "@/components/CardList";
 import SocialLinks from "@/components/SocialLinks";
 import ExternalLink from "@/components/ExternalLink";
 import { SectionHeader } from "@/components/SectionHeader";
+import InternalLink from "@/components/InternalLink";
 
 export default function AboutSection() {
   return (
@@ -13,25 +14,34 @@ export default function AboutSection() {
             Back in 2016, I decided to try my hand at programming a snake game
             after watching a{" "}
             <span className="text-white">
-              <ExternalLink href="https://www.youtube.com/watch?v=AaGK-fj-BAM&t">
+              <ExternalLink href="https://www.youtube.com/watch?v=AaGK-fj-BAMt">
                 YouTube video
               </ExternalLink>
             </span>
             . That’s when I tumbled head first into the rabbit hole of
-            programming. Fast-forward to today, and I have a Master&apos;s
-            degree in computer science from the Norwegian University of Science
-            and Technology. At the moment, I&apos;m broadening my knowledge at
-            University of Tromsø where I&apos;m studying mangement, set to
-            gradute in June 2024.
+            programming. Fast forward to today, and I hold a Master’s degree in
+            Computer Science from the Norwegian University of Science and
+            Technology. I’m currently expanding my skill set at the University
+            of Tromsø, where I’m studying in management with an expected
+            graduation date of June 2024.
           </p>
           <p>
-            Throughout the years, I&apos;ve gained experience in a diverse set
-            of programming languages. I&apos;d say I&apos;m most proficient in
-            Python and backend development. However, I&apos;m no stranger to
-            frontend development and design either, as evidenced by this
-            website! Moreover, I enjoy trying out cutting-edge technologies,
-            like Rust and WebAssembly. You&apos;ll often find me in the
-            terminal, programming in Neovim. I also use Arch Linux, by the way.
+            Over the years, I’ve gained experience in a diverse set of
+            programming languages, with a particular focus on Python and backend
+            development. However, my interests extend to frontend development,
+            as evidenced by this website. I’m always eager to try out emerging
+            technologies, like WebAssembly. For those curious, I use Neovim and
+            Arch Linux, by the way.
+          </p>
+          <p>
+            Security is another interest of mine. I’ve identified and disclosed
+            critical vulnerabilities that were present on a prominent website.
+            On a related note, did you know that websites might be secretly
+            mining cryptocurrencies on your computer without your consent? It’s
+            a practice known as drive-by mining or cryptojacking, and I’ve
+            actually published several peer-reviewed papers on the subject! See
+            the <InternalLink href="#publications">publications</InternalLink>{" "}
+            section for more details.
           </p>
           <p>I am currently looking for new job opportunities.</p>
           <MyLinks />
