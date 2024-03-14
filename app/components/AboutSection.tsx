@@ -40,6 +40,11 @@ export default function AboutSection() {
             mining cryptocurrencies on your computer without your consent? It’s
             a practice known as drive-by mining or cryptojacking, and I’ve
             actually published several peer-reviewed papers on the subject!
+            Check out the{" "}
+            <InternalLink underline href="#publications">
+              publications
+            </InternalLink>{" "}
+            section for more details.
           </p>
           <p>I am currently looking for new job opportunities.</p>
           <MyLinks />
