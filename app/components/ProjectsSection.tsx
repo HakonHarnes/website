@@ -16,28 +16,27 @@ export default function ProjectsSection() {
       <SectionHeader title="Projects" />
       <div className="grid gap-14 xl:gap-24 lg:grid-cols-2 pt-2">
         {projects.map((project) => (
-          <ProjectComponent key={project.slug} project={project} />
+          <ProjectItem key={project.slug} {...project} />
         ))}
       </div>
     </section>
   );
 }
 
-type ProjectComponentProps = {
-  project: Project;
-};
-
-function ProjectComponent({ project }: ProjectComponentProps) {
+function ProjectItem({
+  slug,
+  media,
+  title,
+  technologies,
+  abstract,
+  github,
+}: Project) {
   return (
     <div className="flex flex-col gap-4">
-      <ProjectImage media={project.media} slug={project.slug} />
-      <ProjectDetails
-        title={project.title}
-        slug={project.slug}
-        technologies={project.technologies}
-      />
-      <ProjectAbstract abstract={project.abstract} />
-      <ProjectLinks slug={project.slug} github={project.github} />
+      <ProjectImage media={media} slug={slug} />
+      <ProjectDetails title={title} slug={slug} technologies={technologies} />
+      <ProjectAbstract abstract={abstract} />
+      <ProjectLinks slug={slug} github={github} />
     </div>
   );
 }

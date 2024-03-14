@@ -17,9 +17,14 @@ export default function PublicationsSection() {
   );
 }
 
-function PublicationItem(props: Publication) {
-  const { title, journal, date, doi, abstract, keywords } = props;
-
+function PublicationItem({
+  title,
+  journal,
+  date,
+  doi,
+  abstract,
+  keywords,
+}: Publication) {
   return (
     <div className="flex flex-col gap-2 sm:gap-1">
       <div className="flex justify-between gap-1">

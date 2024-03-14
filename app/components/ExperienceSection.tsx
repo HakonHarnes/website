@@ -16,10 +16,14 @@ export default function ExperienceSection() {
   );
 }
 
-function ExperienceItem(props: Experience) {
-  const { company, position, date, location, description, technologies } =
-    props;
-
+function ExperienceItem({
+  company,
+  position,
+  date,
+  location,
+  description,
+  technologies,
+}: Experience) {
   return (
     <div className="flex flex-col gap-1">
       <div className="flex justify-between gap-1">

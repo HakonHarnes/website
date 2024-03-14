@@ -30,7 +30,7 @@ export default function Page({ params }: ProjectProps) {
   const project = projects.find((p) => p.slug === params.slug);
 
   if (project) {
-    return <ProjectComponent project={project} />;
+    return <ProjectComponent {...project} />;
   } else {
     return <ProjectDoesNotExist />;
   }
@@ -55,21 +55,24 @@ function ProjectDoesNotExist() {
   );
 }
 
-function ProjectComponent({ project }: { project: Project }) {
+function ProjectComponent({
+  media,
+  slug,
+  title,
+  technologies,
+  description,
+  github,
+  youtube,
+  twitter,
+  feedback,
+}: Project) {
   return (
     <div className="flex flex-col max-w-5xl items-center mx-auto justify-center gap-6 py-14 text-lg">
-      <ProjectImage media={project.media} slug={project.slug} />
-      <ProjectDetails
-        title={project.title}
-        technologies={project.technologies}
-      />
-      <ProjectDescription description={project.description} />
-      <ProjectLinks
-        github={project.github}
-        youtube={project.youtube}
-        twitter={project.twitter}
-      />
-      {project.feedback && <FeedbackList feedback={project.feedback} />}
+      <ProjectImage media={media} slug={slug} />
+      <ProjectDetails title={title} technologies={technologies} />
+      <ProjectDescription description={description} />
+      <ProjectLinks github={github} youtube={youtube} twitter={twitter} />
+      {feedback && <FeedbackList feedback={feedback} />}
     </div>
   );
 }
