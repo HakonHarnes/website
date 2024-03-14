@@ -15,7 +15,7 @@ type TerminalProps = {
   commands: Command[];
 };
 
-const INITIAL_DELAY = 500;
+const INITIAL_DELAY = 600;
 const COMMAND_DELAY = 1800;
 const OUTPUT_DELAY = 250;
 
@@ -41,7 +41,7 @@ export default function Terminal({ commands }: TerminalProps) {
             </span>
             <ReactTyped
               strings={[
-                `echo <span class="text-sky-200">${command.variable}</span>`,
+                `echo&ensp;<span class="text-sky-200">${command.variable}</span>`,
               ]}
               typeSpeed={45}
               showCursor={false}
