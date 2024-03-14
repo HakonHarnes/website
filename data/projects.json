@@ -4,7 +4,7 @@
     "media": "/img-clip.gif",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
-    "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 100 users and over 280 stars on GitHub.",
+    "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and over 280 stars on GitHub.",
     "description": [
       "img-clip is a cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. The standout feature of this plugin is the drag and drop functionality. Simply drag and drop images from the web browser or file explorer into the terminal to embed them in any markup language. Moreover, it provides functionality for pasting images directly from the system clipboard. The markup templates provide extensibility through configurable cursor positioning, figure labels and auto-generated file names. In addition, images can be embedded as files, URLs or Base64.",
       "The plugin has been endorsed by the community with over 1000 users and over 280 stars on GitHub. It was even featured on the official Neovim twitter, and in a nearly hour long video on Youtube! Check it out in the links below. "
