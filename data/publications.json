@@ -1,6 +1,6 @@
 [
   {
-    "title": "SoK: Analysis techniques for WebAssembly",
+    "title": "SoK: Analysis Techniques for WebAssembly",
     "journal": "MDPI Future Internet",
     "date": "2024",
     "doi": "https://doi.org/10.3390/fi16030084",
@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Deceptive bytes: Evaluating WebAssembly obfuscation for evading crypto mining detection",
+    "title": "Deceptive Bytes: WebAssembly Obfuscation for Evading Crypto Mining Detection",
     "journal": "To be announced.",
     "date": "2024",
     "doi": "",
