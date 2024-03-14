@@ -1,25 +1,13 @@
-type LinkType = "text" | "icon";
-
-function linkClasses(type: LinkType) {
-  switch (type) {
-    case "icon":
-      return "fill-white stroke-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400";
-    case "text":
-    default:
-      return "fill-white font-semibold border-b-2 border-b-sky-400 hover:text-sky-400";
-  }
-}
-
 export default function ExternalLink({
   href,
   newTab = true,
-  type = "text",
+  underline = true,
   children,
-  className,
+  className = "",
 }: {
   href: string;
   newTab?: boolean;
-  type?: LinkType;
+  underline?: boolean;
   children: React.ReactNode;
   className?: string;
 }) {
@@ -28,7 +16,9 @@ export default function ExternalLink({
       href={href}
       target={newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
-      className={linkClasses(type) + " " + className}
+      className={`fill-white stroke-white font-semibold text-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400 ${
+        underline ? "border-b-2 border-b-sky-400" : ""
+      } ${className}`}
     >
       {children}
     </a>

@@ -101,9 +101,11 @@ type ProjectLinksProps = {
 
 function ProjectLinks({ slug, github }: ProjectLinksProps) {
   return (
-    <div className="flex gap-4 text-lg">
-      <InternalLink href={`projects/${slug}`}>Learn more</InternalLink>
-      <ExternalLink href={github} newTab>
+    <div className="flex gap-3 text-lg">
+      <InternalLink underline={true} href={`projects/${slug}`}>
+        Learn more
+      </InternalLink>
+      <ExternalLink underline={true} href={github} newTab>
         GitHub
       </ExternalLink>
     </div>

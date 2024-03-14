@@ -8,19 +8,26 @@ export default function SocialLinks() {
     <ul className="gap-3 flex items-center justify-center">
       <li>
         <ExternalLink
-          type="icon"
+          underline={false}
           href="https://www.linkedin.com/in/hakon-harnes/"
         >
           <LinkedInIcon />
         </ExternalLink>
       </li>
       <li>
-        <ExternalLink type="icon" href="https://www.github.com/hakonharnes">
+        <ExternalLink
+          underline={false}
+          href="https://www.github.com/hakonharnes"
+        >
           <GitHubIcon />
         </ExternalLink>
       </li>
       <li>
-        <ExternalLink type="icon" href="mailto:hakon@harnes.co" newTab={false}>
+        <ExternalLink
+          underline={false}
+          newTab={false}
+          href="mailto:hakon@harnes.co"
+        >
           <EmailIcon />
         </ExternalLink>
       </li>
