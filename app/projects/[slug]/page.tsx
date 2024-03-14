@@ -135,7 +135,7 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
 function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Image
-      className="aspect-video w-full rounded-lg border border-slate-700 object-cover"
+      className="aspect-video w-full rounded-lg border border-slate-600 object-cover"
       src={media}
       width={1000}
       height={1000}
@@ -153,7 +153,7 @@ function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
   return (
     <div className="w-full flex flex-col sm:flex-row sm:items-center gap-3">
       <h2 className="text-3xl font-bold text-nowrap">{title}</h2>
-      <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
+      <div className="w-full h-[3px] hidden sm:block bg-slate-600 opacity-30" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
       </div>

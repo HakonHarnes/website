@@ -45,7 +45,7 @@ function PublicationItem({
       </div>
       <p className="my-2 text-lg text-slate-400">{abstract}</p>
       <CardList elements={keywords} />
-      <div className="mt-5 h-[1px] w-full bg-slate-700 opacity-30" />
+      <div className="mt-5 h-[2px] w-full bg-slate-600 opacity-30" />
     </div>
   );
 }

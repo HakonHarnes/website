@@ -53,7 +53,7 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
       className="shadow-2xl transform hover:scale-[1.010] transition-transform duration-200"
     >
       <Image
-        className="w-full aspect-video rounded-lg border border-slate-700 object-cover"
+        className="w-full aspect-video rounded-lg border border-slate-600 object-cover"
         src={media}
         width={500}
         height={500}
@@ -77,7 +77,7 @@ function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
           {title}
         </h2>
       </Link>
-      <div className="w-full h-[2px] hidden sm:block bg-slate-700 opacity-30" />
+      <div className="w-full h-[2px] hidden sm:block bg-slate-600 opacity-30" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
       </div>
