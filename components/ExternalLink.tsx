@@ -14,6 +14,7 @@ export default function ExternalLink({
   return (
     <a
       href={href}
+      title={href}
       target={newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
       className={`fill-white stroke-white font-semibold text-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400 ${
