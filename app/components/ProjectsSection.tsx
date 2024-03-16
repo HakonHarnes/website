@@ -14,7 +14,7 @@ export default function ProjectsSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Projects" />
-      <div className="grid gap-14 xl:gap-24 lg:grid-cols-2 pt-2">
+      <div className="grid gap-14 pt-2 lg:grid-cols-2 xl:gap-24">
         {projects.map((project) => (
           <ProjectItem key={project.slug} {...project} />
         ))}
@@ -48,12 +48,9 @@ type ProjectImageProps = {
 
 function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
-    <Link
-      href={`projects/${slug}`}
-      className="shadow-2xl transform hover:scale-[1.010] transition-transform duration-200"
-    >
+    <Link href={`projects/${slug}`} className="shadow-2xl">
       <Image
-        className="w-full aspect-video rounded-lg border border-slate-600 object-cover"
+        className="aspect-video w-full rounded-lg object-cover hover:outline hover:outline-4 hover:outline-sky-500"
         src={media}
         width={500}
         height={500}
@@ -71,16 +68,16 @@ type ProjectDetailsProps = {
 
 function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
   return (
-    <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+    <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
       <Link href={`projects/${slug}`}>
         <h2
-          className="text-2xl font-bold hover:text-sky-500 cursor-pointer"
+          className="cursor-pointer text-2xl font-bold hover:text-sky-500"
           style={{ whiteSpace: "nowrap" }}
         >
           {title}
         </h2>
       </Link>
-      <div className="w-full h-[2px] hidden sm:block bg-slate-600 opacity-30" />
+      <div className="hidden h-[2px] w-full bg-slate-600 opacity-30 sm:block" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
       </div>
