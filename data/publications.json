@@ -14,7 +14,7 @@
     ]
   },
   {
-    "title": "Deceptive Bytes: WebAssembly Obfuscation for Evading Crypto Mining Detection",
+    "title": "Cryptic Bytes: WebAssembly Obfuscation for Evading Cryptojacking Detection",
     "journal": "To be announced.",
     "date": "2024",
     "doi": "",
@@ -22,7 +22,8 @@
     "keywords": [
       "WebAssembly",
       "Obfuscation",
-      "Browser security",
+      "Cybersecurity",
+      "Cryptojacking",
       "Crypto mining"
     ]
   }
