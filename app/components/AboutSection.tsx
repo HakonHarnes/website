@@ -38,9 +38,8 @@ export default function AboutSection() {
             critical vulnerabilities that were present on a prominent website.
             On a related note, did you know that websites might be secretly
             mining cryptocurrencies on your computer without your consent? It’s
-            a practice known as drive-by mining or cryptojacking, and I’ve
-            actually published several peer-reviewed papers on the subject!
-            Check out the{" "}
+            a practice known as cryptojacking, and I’ve actually published
+            several peer-reviewed papers on the subject! Check out the{" "}
             <InternalLink underline href="#publications">
               publications
             </InternalLink>{" "}
