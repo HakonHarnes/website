@@ -155,7 +155,9 @@ type ProjectDetailsProps = {
 function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
   return (
     <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center">
-      <h2 className="text-nowrap text-3xl font-bold">{title}</h2>
+      <h2 className="text-3xl font-bold" style={{ whiteSpace: "nowrap" }}>
+        {title}
+      </h2>
       <div className="hidden h-[3px] w-full bg-slate-600 opacity-30 sm:block" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
