@@ -73,7 +73,10 @@ function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
   return (
     <div className="flex flex-col sm:flex-row sm:items-center gap-3">
       <Link href={`projects/${slug}`}>
-        <h2 className="text-2xl font-bold text-nowrap hover:text-sky-500 cursor-pointer">
+        <h2
+          className="text-2xl font-bold hover:text-sky-500 cursor-pointer"
+          style={{ whiteSpace: "nowrap" }}
+        >
           {title}
         </h2>
       </Link>
