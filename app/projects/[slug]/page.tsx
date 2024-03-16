@@ -135,7 +135,7 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
 
 function ProjectImage({ media, slug, github }: ProjectImageProps) {
   return (
-    <ExternalLink href={github}>
+    <ExternalLink href={github} className="w-full">
       <Image
         className="aspect-video w-full cursor-pointer rounded-lg object-cover outline outline-4 outline-slate-500 hover:outline-sky-500"
         src={media}
