@@ -22,7 +22,7 @@ export default function Button({ href, color, children }: ButtonProps) {
   return (
     <Link
       href={href}
-      className={`rounded font-semibold h-12 flex items-center justify-center w-full xs:max-w-40 ${buttonColorClasses(
+      className={`rounded font-semibold h-12 flex items-center justify-center w-full max-w-40 ${buttonColorClasses(
         color || "sky",
       )}`}
       rel="noopener noreferrer"
