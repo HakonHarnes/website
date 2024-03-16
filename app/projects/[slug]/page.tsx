@@ -23,6 +23,7 @@ type FeedbackItemProps = {
 
 type ProjectImageProps = {
   media: string;
+  github: string;
   slug: string;
 };
 
@@ -67,8 +68,8 @@ function ProjectComponent({
   feedback,
 }: Project) {
   return (
-    <div className="flex flex-col max-w-5xl items-center mx-auto justify-center gap-6 py-14 text-lg">
-      <ProjectImage media={media} slug={slug} />
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-14 text-lg">
+      <ProjectImage media={media} slug={slug} github={github} />
       <ProjectDetails title={title} technologies={technologies} />
       <ProjectDescription description={description} />
       <ProjectLinks github={github} youtube={youtube} twitter={twitter} />
@@ -87,8 +88,8 @@ function ProjectLinks({
   twitter?: string;
 }) {
   return (
-    <div className="flex gap-2 w-full">
-      <span className="text-slate-400 font-semibold">Links:</span>
+    <div className="flex w-full gap-2">
+      <span className="font-semibold text-slate-400">Links:</span>
       {github && <ExternalLink href={github}>GitHub</ExternalLink>}
       {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
       {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}
@@ -99,11 +100,11 @@ function ProjectLinks({
 function FeedbackList({ feedback }: FeedbackListProps) {
   return (
     <div className="pt-12">
-      <h2 className="text-3xl text-center font-bold">
+      <h2 className="text-center text-3xl font-bold">
         Here&apos;s what other people are saying
       </h2>
       <div className="flex flex-col items-center gap-10 pt-10">
-        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 md:gap-4">
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3">
           {feedback.map((item) => (
             <FeedbackItem key={item.url} {...item} />
           ))}
@@ -116,7 +117,7 @@ function FeedbackList({ feedback }: FeedbackListProps) {
 function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
   return (
     <Card>
-      <div className="flex h-full flex-col gap-1 items-start">
+      <div className="flex h-full flex-col items-start gap-1">
         <p>{comment}</p>
         <div className="flex-grow" />
         <a
@@ -132,15 +133,17 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
   );
 }
 
-function ProjectImage({ media, slug }: ProjectImageProps) {
+function ProjectImage({ media, slug, github }: ProjectImageProps) {
   return (
-    <Image
-      className="aspect-video w-full rounded-lg border border-slate-600 object-cover"
-      src={media}
-      width={1000}
-      height={1000}
-      alt={slug}
-    />
+    <ExternalLink href={github}>
+      <Image
+        className="aspect-video w-full cursor-pointer rounded-lg object-cover outline outline-4 outline-slate-500 hover:outline-sky-500"
+        src={media}
+        width={1000}
+        height={1000}
+        alt={slug}
+      />
+    </ExternalLink>
   );
 }
 
@@ -151,9 +154,9 @@ type ProjectDetailsProps = {
 
 function ProjectDetails({ title, technologies }: ProjectDetailsProps) {
   return (
-    <div className="w-full flex flex-col sm:flex-row sm:items-center gap-3">
-      <h2 className="text-3xl font-bold text-nowrap">{title}</h2>
-      <div className="w-full h-[3px] hidden sm:block bg-slate-600 opacity-30" />
+    <div className="flex w-full flex-col gap-3 sm:flex-row sm:items-center">
+      <h2 className="text-nowrap text-3xl font-bold">{title}</h2>
+      <div className="hidden h-[3px] w-full bg-slate-600 opacity-30 sm:block" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
       </div>

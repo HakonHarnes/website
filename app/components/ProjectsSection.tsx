@@ -50,7 +50,7 @@ function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
     <Link href={`projects/${slug}`} className="shadow-2xl">
       <Image
-        className="aspect-video w-full rounded-lg object-cover hover:outline hover:outline-4 hover:outline-sky-500"
+        className="aspect-video w-full rounded-lg object-cover outline outline-4 outline-slate-500 hover:outline-sky-500"
         src={media}
         width={500}
         height={500}
