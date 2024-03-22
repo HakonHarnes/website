@@ -1,3 +1,7 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function ExternalLink({
   href,
   newTab = true,
@@ -11,11 +15,17 @@ export default function ExternalLink({
   children: React.ReactNode;
   className?: string;
 }) {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    setIsMobile(window.innerWidth <= 768);
+  }, []);
+
   return (
     <a
       href={href}
       title={href}
-      target={newTab ? "_blank" : "_self"}
+      target={!isMobile && newTab ? "_blank" : "_self"}
       rel="noopener noreferrer"
       className={`fill-white stroke-white font-semibold text-white hover:fill-sky-400 hover:stroke-sky-400 hover:text-sky-400 ${
         underline ? "border-b-2 border-b-sky-400" : ""
