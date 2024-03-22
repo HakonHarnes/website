@@ -59,9 +59,7 @@ export default function AboutSection() {
 function MyLinks() {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-lg font-medium text-slate-400 pt-[2px]">
-        Reach me at:
-      </span>
+      <span className="text-lg text-slate-400 pt-[2px]">Reach me at:</span>
       <SocialLinks />
     </div>
   );
