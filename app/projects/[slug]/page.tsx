@@ -23,7 +23,6 @@ type FeedbackItemProps = {
 
 type ProjectImageProps = {
   media: string;
-  github: string;
   slug: string;
 };
 
@@ -69,7 +68,7 @@ function ProjectComponent({
 }: Project) {
   return (
     <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-14 text-lg">
-      <ProjectImage media={media} slug={slug} github={github} />
+      <ProjectImage media={media} slug={slug} />
       <ProjectDetails title={title} technologies={technologies} />
       <ProjectDescription description={description} />
       <ProjectLinks github={github} youtube={youtube} twitter={twitter} />
@@ -133,17 +132,15 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
   );
 }
 
-function ProjectImage({ media, slug, github }: ProjectImageProps) {
+function ProjectImage({ media, slug }: ProjectImageProps) {
   return (
-    <ExternalLink href={github} className="w-full">
-      <Image
-        className="aspect-video w-full cursor-pointer rounded-lg object-cover outline outline-4 outline-slate-500 hover:outline-sky-500"
-        src={media}
-        width={1000}
-        height={1000}
-        alt={slug}
-      />
-    </ExternalLink>
+    <Image
+      className="aspect-video w-full rounded-lg object-cover outline outline-4 outline-slate-500"
+      src={media}
+      width={1000}
+      height={1000}
+      alt={slug}
+    />
   );
 }
 
