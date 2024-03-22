@@ -88,7 +88,7 @@ function ProjectLinks({
 }) {
   return (
     <div className="flex w-full gap-2">
-      <span className="font-semibold text-slate-400">Links:</span>
+      <span className="text-slate-400">Links:</span>
       {github && <ExternalLink href={github}>GitHub</ExternalLink>}
       {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
       {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}
