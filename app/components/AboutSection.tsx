@@ -28,18 +28,17 @@ export default function AboutSection() {
           <p>
             Over the years, I’ve gained experience in a diverse set of
             programming languages, with a particular focus on Python and backend
-            development. However, my interests extend to frontend development,
-            as evidenced by this website. I’m always eager to try out emerging
-            technologies, like WebAssembly. For those curious, I use Neovim and
-            Arch Linux, by the way.
+            development. However, my interests extend to frontend development
+            and design, in addition to emerging technologies like WebAssembly. I
+            currently use Neovim as my editor of choice, on Arch Linux.
           </p>
           <p>
             Security is another interest of mine. I’ve identified and disclosed
-            critical vulnerabilities. On a related note, did you know that
-            websites might be secretly mining cryptocurrencies on your computer
-            without your consent? It’s a practice known as cryptojacking, and
-            I’ve actually published several peer-reviewed papers on the subject!
-            Check out the{" "}
+            critical vulnerabilities on a prominent website. On a related note,
+            did you know that websites might be secretly mining cryptocurrencies
+            on your computer without your consent? It’s a practice known as
+            cryptojacking, and I’ve actually published several peer-reviewed
+            papers on the subject! Check out the{" "}
             <InternalLink underline href="#publications">
               publications
             </InternalLink>{" "}
