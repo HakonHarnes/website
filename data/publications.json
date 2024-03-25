@@ -1,5 +1,13 @@
 [
   {
+    "title": "Cryptic Bytes: WebAssembly Obfuscation for Evading Cryptojacking Detection",
+    "journal": "Pre-print",
+    "date": "2024",
+    "doi": "https://arxiv.org/abs/2403.15197",
+    "abstract": "WebAssembly has gained significant traction as a high-performance, secure, and portable compilation target for the Web and beyond. However, its growing adoption has also introduced new security challenges. One such threat is cryptojacking, where websites mine cryptocurrencies on visitors' devices without their knowledge or consent, often through the use of WebAssembly. While detection methods have been proposed, research on circumventing them remains limited. In this paper, we present the most comprehensive evaluation of code obfuscation techniques for WebAssembly to date, assessing their effectiveness, detectability, and overhead across multiple abstraction levels. We obfuscate a diverse set of applications, including utilities, games, and crypto miners, using state-of-the-art obfuscation tools like Tigress and wasm-mutate, as well as our novel tool, emcc-obf. Our findings suggest that obfuscation can effectively produce dissimilar WebAssembly binaries, with Tigress proving most effective, followed by emcc-obf and wasm-mutate. The impact on the resulting native code is also significant, although the V8 engine's TurboFan optimizer can reduce native code size by 30% on average. Notably, we find that obfuscation can successfully evade state-of-the-art cryptojacking detectors. Although obfuscation can introduce substantial performance overheads, we demonstrate how obfuscation can be used for evading detection with minimal overhead in real-world scenarios by strategically applying transformations. These insights are valuable for researchers, providing a foundation for developing more robust detection methods. Additionally, we make our dataset of over 20,000 obfuscated WebAssembly binaries and the emcc-obf tool publicly available to stimulate further research.",
+    "keywords": ["WebAssembly", "Obfuscation", "Cybersecurity", "Cryptojacking"]
+  },
+  {
     "title": "SoK: Analysis Techniques for WebAssembly",
     "journal": "MDPI Future Internet",
     "date": "2024",
@@ -11,20 +19,6 @@
       "Browser security",
       "Cryptojacking",
       "Smart contracts"
-    ]
-  },
-  {
-    "title": "Cryptic Bytes: WebAssembly Obfuscation for Evading Cryptojacking Detection",
-    "journal": "To be announced.",
-    "date": "2024",
-    "doi": "",
-    "abstract": "To be published.",
-    "keywords": [
-      "WebAssembly",
-      "Obfuscation",
-      "Cybersecurity",
-      "Cryptojacking",
-      "Crypto mining"
     ]
   }
 ]
