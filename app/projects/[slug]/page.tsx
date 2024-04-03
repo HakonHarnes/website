@@ -11,21 +11,6 @@ type ProjectProps = {
   params: { slug: string };
 };
 
-type FeedbackListProps = {
-  feedback: Feedback[];
-};
-
-type FeedbackItemProps = {
-  url: string;
-  source: string;
-  comment: string;
-};
-
-type ProjectImageProps = {
-  media: string;
-  slug: string;
-};
-
 export default function Page({ params }: ProjectProps) {
   const project = projects.find((p) => p.slug === params.slug);
 
@@ -68,7 +53,7 @@ function ProjectComponent({
 }: Project) {
   return (
     <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-14 text-lg">
-      <ProjectImage media={media} slug={slug} />
+      <ProjectMedia media={media} slug={slug} />
       <ProjectDetails title={title} technologies={technologies} />
       <ProjectDescription description={description} />
       <ProjectLinks github={github} youtube={youtube} twitter={twitter} />
@@ -96,6 +81,10 @@ function ProjectLinks({
   );
 }
 
+type FeedbackListProps = {
+  feedback: Feedback[];
+};
+
 function FeedbackList({ feedback }: FeedbackListProps) {
   return (
     <div className="pt-12">
@@ -112,6 +101,12 @@ function FeedbackList({ feedback }: FeedbackListProps) {
     </div>
   );
 }
+
+type FeedbackItemProps = {
+  url: string;
+  source: string;
+  comment: string;
+};
 
 function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
   return (
@@ -132,15 +127,37 @@ function FeedbackItem({ url, source, comment }: FeedbackItemProps) {
   );
 }
 
-function ProjectImage({ media, slug }: ProjectImageProps) {
+type ProjectMediaProps = {
+  media: string;
+  slug: string;
+};
+
+function ProjectMedia({ media, slug }: ProjectMediaProps) {
+  const isVideo = media.toLowerCase().endsWith(".mp4");
+
   return (
-    <Image
-      className="aspect-video w-full rounded-lg object-cover outline outline-4 outline-slate-500"
-      src={media}
-      width={1000}
-      height={1000}
-      alt={slug}
-    />
+    <div className="rounded-lg shadow-2xl outline outline-4 outline-slate-500">
+      {isVideo ? (
+        <video
+          autoPlay
+          loop
+          muted
+          controls
+          className="aspect-video w-full object-cover"
+        >
+          <source src={media} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <Image
+          className="aspect-video w-full object-cover"
+          src={media}
+          width={1000}
+          height={1000}
+          alt={slug}
+        />
+      )}
+    </div>
   );
 }
 

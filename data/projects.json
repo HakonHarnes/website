@@ -1,7 +1,7 @@
 [
   {
     "slug": "img-clip",
-    "media": "/img-clip.gif",
+    "media": "/img-clip.mp4",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
     "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and over 280 stars on GitHub.",

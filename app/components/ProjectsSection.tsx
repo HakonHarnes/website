@@ -33,7 +33,7 @@ function ProjectItem({
 }: Project) {
   return (
     <div className="flex flex-col gap-4">
-      <ProjectImage media={media} slug={slug} />
+      <ProjectMedia media={media} slug={slug} />
       <ProjectDetails title={title} slug={slug} technologies={technologies} />
       <ProjectAbstract abstract={abstract} />
       <ProjectLinks slug={slug} github={github} />
@@ -41,21 +41,33 @@ function ProjectItem({
   );
 }
 
-type ProjectImageProps = {
+type ProjectMediaProps = {
   media: string;
   slug: string;
 };
 
-function ProjectImage({ media, slug }: ProjectImageProps) {
+function ProjectMedia({ media, slug }: ProjectMediaProps) {
+  const isVideo = media.toLowerCase().endsWith(".mp4");
+
   return (
-    <Link href={`projects/${slug}`} className="shadow-2xl">
-      <Image
-        className="aspect-video w-full rounded-lg object-cover outline outline-4 outline-slate-500 hover:outline-sky-500"
-        src={media}
-        width={500}
-        height={500}
-        alt={slug}
-      />
+    <Link
+      href={`projects/${slug}`}
+      className="shadow-2xl rounded-lg outline outline-4 outline-slate-500 hover:outline-sky-500"
+    >
+      {isVideo ? (
+        <video autoPlay loop muted className="aspect-video w-full object-cover">
+          <source src={media} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      ) : (
+        <Image
+          className="w-full aspect-video object-cover"
+          src={media}
+          width={500}
+          height={500}
+          alt={slug}
+        />
+      )}
     </Link>
   );
 }
