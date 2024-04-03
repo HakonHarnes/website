@@ -24,11 +24,11 @@ function AboutMe() {
       <h1 className="text-4xl font-extrabold tracking-tight dark:text-white md:text-4xl lg:text-6xl">
         Håkon Harnes
       </h1>
-      <p className="  text-xl text-slate-400 md:max-w-md lg:text-2xl">
+      <p className="text-xl font-medium text-slate-400 md:max-w-md lg:text-2xl">
         I&apos;m a <span className="font-semibold text-sky-400">developer</span>{" "}
         from Norway.
       </p>
-      <div className="flex w-full justify-center gap-3 pt-2 lg:gap-4 lg:justify-start">
+      <div className="flex w-full justify-center gap-3 pt-2 lg:justify-start lg:gap-4">
         <Button href="mailto:hakon@harnes.co">Contact me</Button>
         <Button href="https://github.com/hakonharnes" color="white">
           GitHub
