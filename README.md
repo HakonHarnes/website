@@ -1,9 +1,8 @@
-# [harnes.co](https://harnes.co)
+# Website 
 
+![demo](https://github.com/HakonHarnes/website/assets/89907156/45db56d3-30fa-43a5-aa8d-ad9a10629edc)
 
-![final](https://github.com/HakonHarnes/website/assets/89907156/b0a0447c-3d8c-4d1d-b10c-9d0a2c165e3d)
-
-Personal website built using Next.js and Tailwindcss. Deployed at [https://harnes.co](https://harnes.co).
+Personal website built using Next.js and Tailwind. Deployed at [https://harnes.co](https://harnes.co).
 
 ## Development
 
