@@ -145,7 +145,7 @@ function ProjectMedia({ media, slug }: ProjectMediaProps) {
   const isVideo = media.toLowerCase().endsWith(".mp4");
 
   return (
-    <div className="rounded-lg shadow-2xl outline outline-4 outline-slate-500">
+    <div className="rounded-lg shadow-2xl outline outline-4 outline-slate-500 w-full">
       {isVideo ? (
         <video
           autoPlay

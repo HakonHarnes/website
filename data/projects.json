@@ -113,5 +113,16 @@
     ],
     "github": "https://github.com/hakonharnes/website",
     "website": "https://harnes.co"
+  },
+  {
+    "slug": "print-buddy",
+    "media": "/print-buddy.png",
+    "title": "PrintBuddy",
+    "technologies": ["SvelteKit", "FastAPI"],
+    "abstract": "Web application for generating 3D printing tips and settings for websites like Printables and Thingiverse. Coming soon.",
+    "description": [
+      "Web application for generating 3D printing tips and settings for websites like Printables and Thingiverse. Coming soon."
+    ],
+    "website": "https://printbuddy.app"
   }
 ]
