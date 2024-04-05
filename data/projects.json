@@ -111,8 +111,7 @@
     "description": [
       "Personal website is built using modern web technologies like TypeScript, Next.js, and Tailwind CSS. It features a clean and responsive design, allowing visitors to see my projects and experience, learn about my skills, and get in touch with me. The terminal is a custom component that's animated using the react-typed library."
     ],
-    "github": "https://github.com/hakonharnes/website",
-    "website": "https://harnes.co"
+    "github": "https://github.com/hakonharnes/website"
   },
   {
     "slug": "print-buddy",
