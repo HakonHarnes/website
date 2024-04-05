@@ -14,7 +14,7 @@ export default function ProjectsSection() {
   return (
     <section className="mt-28">
       <SectionHeader title="Projects" />
-      <div className="grid gap-14 pt-2 lg:grid-cols-2 xl:gap-24">
+      <div className="grid gap-14 pt-2 lg:grid-cols-2 xl:gap-20">
         {projects.map((project) => (
           <ProjectItem key={project.slug} {...project} />
         ))}
