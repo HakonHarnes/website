@@ -70,17 +70,43 @@ function Skills() {
       <SkillList
         key="languages"
         title="Languages"
-        technologies={["Python", "TypeScript", "HTML", "CSS", "Bash", "Rust"]}
+        technologies={[
+          "Python",
+          "TypeScript",
+          "Lua",
+          "Bash",
+          "WebAssembly",
+          "Java",
+          "Rust",
+          "SQL",
+          "C",
+          "C++",
+        ]}
       />
       <SkillList
         key="frameworks"
         title="Frameworks & libraries"
-        technologies={["FastAPI", "Django", "Express.js", "TailwindCSS"]}
+        technologies={[
+          "FastAPI",
+          "Django",
+          "Next.js",
+          "Sveltekit",
+          "Express.js",
+          "Tailwind",
+        ]}
       />
       <SkillList
         key="technologies"
         title="Technologies"
-        technologies={["Linux", "Docker", "Vim"]}
+        technologies={[
+          "Linux",
+          "Docker",
+          "Git",
+          "AWS",
+          "CI/CD",
+          "OAuth",
+          "JWT",
+        ]}
       />
     </div>
   );
