@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type ButtonColors = "sky" | "white" | "red";
+type ButtonColors = "sky" | "white";
 
 type ButtonProps = {
   href: string;
