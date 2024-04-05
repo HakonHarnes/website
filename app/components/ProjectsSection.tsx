@@ -107,7 +107,7 @@ function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
 
 type ProjectLinksProps = {
   slug: string;
-  github: string;
+  github?: string;
 };
 
 function ProjectLinks({ slug, github }: ProjectLinksProps) {
@@ -116,9 +116,11 @@ function ProjectLinks({ slug, github }: ProjectLinksProps) {
       <InternalLink underline={true} href={`projects/${slug}`}>
         Learn more
       </InternalLink>
-      <ExternalLink underline={true} href={github} newTab>
-        GitHub
-      </ExternalLink>
+      {github && (
+        <ExternalLink underline={true} href={github} newTab>
+          GitHub
+        </ExternalLink>
+      )}
     </div>
   );
 }

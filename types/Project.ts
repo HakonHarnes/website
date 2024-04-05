@@ -7,8 +7,9 @@ export type Project = {
   technologies: string[];
   description: string[];
   abstract: string;
-  github: string;
+  github?: string;
   youtube?: string;
   twitter?: string;
+  website?: string;
   feedback?: Feedback[];
 };

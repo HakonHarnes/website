@@ -46,6 +46,7 @@ function ProjectComponent({
   title,
   technologies,
   description,
+  website,
   github,
   youtube,
   twitter,
@@ -56,24 +57,32 @@ function ProjectComponent({
       <ProjectMedia media={media} slug={slug} />
       <ProjectDetails title={title} technologies={technologies} />
       <ProjectDescription description={description} />
-      <ProjectLinks github={github} youtube={youtube} twitter={twitter} />
+      <ProjectLinks
+        website={website}
+        github={github}
+        youtube={youtube}
+        twitter={twitter}
+      />
       {feedback && <FeedbackList feedback={feedback} />}
     </div>
   );
 }
 
 function ProjectLinks({
+  website,
   github,
   youtube,
   twitter,
 }: {
-  github: string;
+  website?: string;
+  github?: string;
   youtube?: string;
   twitter?: string;
 }) {
   return (
     <div className="flex w-full gap-2">
       <span className="text-slate-400">Links:</span>
+      {website && <ExternalLink href={website}>Website</ExternalLink>}
       {github && <ExternalLink href={github}>GitHub</ExternalLink>}
       {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
       {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}

@@ -4,7 +4,7 @@
     "media": "/img-clip.mp4",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
-    "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and over 300 stars on GitHub.",
+    "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and 300 stars on GitHub.",
     "description": [
       "Img-clip is a cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. One of the plugin's most notable features is its drag and drop functionality, allowing users to embed images by simply dragging them from their web browser or file explorer directly into the terminal. Additionally, img-clip provides a convenient way to paste images from the system clipboard, as well as integrations with external plugins through its powerful API.",
       "The plugin's markup templates offer extensive customization options, enabling users to configure cursor positioning, figure labels, and auto-generated file names to suit their specific needs. Img-clip also supports multiple image embedding methods, including saving images as files, using URLs, or even embedding them as Base64-encoded data within the document itself. Images from the web are automatically downloaded and embedded into the document. Img-clip also provides advanced image processing capabilities, such as compression and resizing, enabling users to optimize their images before embedding them.",
@@ -101,5 +101,17 @@
       "emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
     ],
     "github": "https://github.com/hakonharnes/emcc-obf"
+  },
+  {
+    "slug": "website",
+    "media": "/website.gif",
+    "title": "Website",
+    "technologies": ["TypeScript", "Next.js", "Tailwind"],
+    "abstract": "Personal website built with modern web technologies, showcasing my projects, skills and experience.",
+    "description": [
+      "Personal website is built using modern web technologies like TypeScript, Next.js, and Tailwind CSS. It features a clean and responsive design, allowing visitors to see my projects and experience, learn about my skills, and get in touch with me. The terminal is a custom component that's animated using the react-typed library."
+    ],
+    "github": "https://github.com/hakonharnes/website",
+    "website": "https://harnes.co"
   }
 ]
