@@ -52,7 +52,7 @@ function ProjectMedia({ media, slug }: ProjectMediaProps) {
   return (
     <Link
       href={`projects/${slug}`}
-      className="shadow-2xl rounded-lg outline outline-4 outline-slate-500 hover:outline-sky-500"
+      className="rounded-lg shadow-2xl outline outline-4 outline-slate-500 hover:outline-sky-500"
     >
       {isVideo ? (
         <video autoPlay loop muted className="aspect-video w-full object-cover">
@@ -61,7 +61,7 @@ function ProjectMedia({ media, slug }: ProjectMediaProps) {
         </video>
       ) : (
         <Image
-          className="w-full aspect-video object-cover"
+          className="aspect-video w-full object-cover"
           src={media}
           width={500}
           height={500}
