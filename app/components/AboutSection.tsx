@@ -68,21 +68,23 @@ function Skills() {
   return (
     <div className="w-full flex flex-col gap-8">
       <SkillList
+        key="languages"
         title="Languages"
         technologies={["Python", "TypeScript", "HTML", "CSS", "Bash", "Rust"]}
       />
       <SkillList
+        key="frameworks"
         title="Frameworks & libraries"
         technologies={["FastAPI", "Django", "Express.js", "TailwindCSS"]}
       />
       <SkillList
+        key="technologies"
         title="Technologies"
         technologies={["Linux", "Docker", "Vim"]}
       />
     </div>
   );
 }
-
 type SkillListProps = {
   title: string;
   technologies: string[];
