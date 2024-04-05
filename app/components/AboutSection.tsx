@@ -85,7 +85,7 @@ function Skills() {
       />
       <SkillList
         key="frameworks"
-        title="Frameworks & libraries"
+        title="Frameworks and libraries"
         technologies={[
           "FastAPI",
           "Django",
