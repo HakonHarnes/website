@@ -53,7 +53,7 @@ export default function Terminal({ commands }: TerminalProps) {
               }}
             />
             <span
-              className={`w-2 h-5 ml-[2px] bg-slate-300 ${
+              className={`w-2 h-5 ml-0.5 bg-slate-300 ${
                 index === activeCommandIndex ? "visible" : "invisible"
               }`}
             ></span>

@@ -36,7 +36,7 @@ function ExperienceItem({
       </div>
       <p className="my-2 text-lg text-slate-400">{description}</p>
       <CardList elements={technologies} />
-      <div className="mt-5 h-[2px] w-full bg-slate-600 opacity-30" />
+      <div className="mt-5 h-0.5 w-full bg-slate-600 opacity-30" />
     </div>
   );
 }

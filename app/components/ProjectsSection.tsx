@@ -89,7 +89,7 @@ function ProjectDetails({ title, slug, technologies }: ProjectDetailsProps) {
           {title}
         </h2>
       </Link>
-      <div className="hidden h-[2px] w-full bg-slate-600 opacity-30 sm:block" />
+      <div className="hidden h-0.5 w-full bg-slate-600 opacity-30 sm:block" />
       <div className="flex-shrink-0">
         <CardList elements={technologies} />
       </div>
