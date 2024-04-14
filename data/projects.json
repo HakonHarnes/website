@@ -2,6 +2,7 @@
   {
     "slug": "img-clip",
     "media": "/img-clip.mp4",
+    "thumbnail": "/img-clip.webp",
     "title": "img-clip.nvim",
     "technologies": ["Lua", "Bash", ".NET"],
     "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and 300 stars on GitHub.",
@@ -94,6 +95,7 @@
   {
     "slug": "emcc-obf",
     "media": "/wasm.webp",
+    "thumbnail": "/wasm.webp",
     "title": "emcc-obf",
     "technologies": ["Docker", "LLVM", "WebAssembly"],
     "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first (and only) compiler that is able to obfuscate WebAssembly. Based on the OLLVM project, built with Docker.",
@@ -105,6 +107,7 @@
   {
     "slug": "website",
     "media": "/website.webp",
+    "thumbnail": "/website.webp",
     "title": "Website",
     "technologies": ["TypeScript", "Next.js", "Tailwind"],
     "abstract": "Personal website built with modern web technologies, showcasing my projects, skills and experience.",
@@ -116,6 +119,7 @@
   {
     "slug": "print-buddy",
     "media": "/print-buddy.png",
+    "thumbnail": "/print-buddy.png",
     "title": "PrintBuddy",
     "technologies": ["SvelteKit", "FastAPI"],
     "abstract": "Web application for generating 3D printing tips and settings for websites like Printables and Thingiverse. Coming soon.",

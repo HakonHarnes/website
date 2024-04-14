@@ -25,7 +25,7 @@ export default function ProjectsSection() {
 
 function ProjectItem({
   slug,
-  media,
+  thumbnail,
   title,
   technologies,
   abstract,
@@ -33,7 +33,7 @@ function ProjectItem({
 }: Project) {
   return (
     <div className="flex flex-col gap-4">
-      <ProjectMedia media={media} slug={slug} />
+      <ProjectThumbnail thumbnail={thumbnail} slug={slug} />
       <ProjectDetails title={title} slug={slug} technologies={technologies} />
       <ProjectAbstract abstract={abstract} />
       <ProjectLinks slug={slug} github={github} />
@@ -41,13 +41,13 @@ function ProjectItem({
   );
 }
 
-type ProjectMediaProps = {
-  media: string;
+type ProjectThumbnailProps = {
+  thumbnail: string;
   slug: string;
 };
 
-function ProjectMedia({ media, slug }: ProjectMediaProps) {
-  const isVideo = media.toLowerCase().endsWith(".mp4");
+function ProjectThumbnail({ thumbnail, slug }: ProjectThumbnailProps) {
+  const isVideo = thumbnail.toLowerCase().endsWith(".mp4");
 
   return (
     <Link
@@ -56,13 +56,13 @@ function ProjectMedia({ media, slug }: ProjectMediaProps) {
     >
       {isVideo ? (
         <video autoPlay loop muted className="aspect-video w-full object-cover">
-          <source src={media} type="video/mp4" />
+          <source src={thumbnail} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       ) : (
         <Image
           className="aspect-video w-full object-cover"
-          src={media}
+          src={thumbnail}
           width={500}
           height={500}
           alt={slug}
