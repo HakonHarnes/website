@@ -93,18 +93,6 @@
     ]
   },
   {
-    "slug": "emcc-obf",
-    "media": "/wasm.webp",
-    "thumbnail": "/wasm.webp",
-    "title": "emcc-obf",
-    "technologies": ["Docker", "LLVM", "WebAssembly"],
-    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first (and only) compiler that is able to obfuscate WebAssembly. Based on the OLLVM project, built with Docker.",
-    "description": [
-      "emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
-    ],
-    "github": "https://github.com/hakonharnes/emcc-obf"
-  },
-  {
     "slug": "website",
     "media": "/website.webp",
     "thumbnail": "/website.webp",
@@ -117,9 +105,21 @@
     "github": "https://github.com/hakonharnes/website"
   },
   {
+    "slug": "emcc-obf",
+    "media": "/wasm.webp",
+    "thumbnail": "/wasm.webp",
+    "title": "emcc-obf",
+    "technologies": ["Docker", "LLVM", "WebAssembly"],
+    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first (and only) compiler that is able to obfuscate WebAssembly. Based on the OLLVM project, built with Docker.",
+    "description": [
+      "emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
+    ],
+    "github": "https://github.com/hakonharnes/emcc-obf"
+  },
+  {
     "slug": "print-buddy",
-    "media": "/print-buddy.png",
-    "thumbnail": "/print-buddy.png",
+    "media": "/print-buddy.webp",
+    "thumbnail": "/print-buddy.webp",
     "title": "PrintBuddy",
     "technologies": ["SvelteKit", "FastAPI"],
     "abstract": "Web application for generating 3D printing tips and settings for websites like Printables and Thingiverse. Coming soon.",
