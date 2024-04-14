@@ -104,7 +104,7 @@
   },
   {
     "slug": "website",
-    "media": "/website.gif",
+    "media": "/website.webp",
     "title": "Website",
     "technologies": ["TypeScript", "Next.js", "Tailwind"],
     "abstract": "Personal website built with modern web technologies, showcasing my projects, skills and experience.",
