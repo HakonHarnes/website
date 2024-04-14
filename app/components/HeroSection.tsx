@@ -10,7 +10,7 @@ export default function HeroSection() {
           { variable: "$name", value: "Håkon Harnes" },
           { variable: "$age", value: "25" },
           { variable: "$location", value: "Norway" },
-          { variable: "$education", value: "MSc. in Computer Science at NTNU" },
+          { variable: "$education", value: "MSc. in Computer Science" },
         ]}
       />
     </div>
