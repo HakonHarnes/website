@@ -53,7 +53,7 @@ function ProjectComponent({
   feedback,
 }: Project) {
   return (
-    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-14 text-lg">
+    <div className="mx-auto flex max-w-5xl flex-col items-center justify-center gap-6 py-14">
       <ProjectMedia media={media} slug={slug} />
       <ProjectDetails title={title} technologies={technologies} />
       <ProjectDescription description={description} />
