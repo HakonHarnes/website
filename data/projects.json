@@ -16,14 +16,24 @@
     "twitter": "https://twitter.com/Neovim/status/1742586883278864411",
     "feedback": [
       {
+        "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
         "comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
         "source": "Reddit",
         "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
       },
       {
-        "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
+        "comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
         "source": "Reddit",
-        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzg0pt/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Thank you for this amazing plugin, I could not believe how configurable it is, especially when I found out it even supports per project configs and dynamic templates!",
+        "source": "Email",
+        "url": ""
       },
       {
         "comment": "That's amazing! Also synergizes great with 3rd/image.nvim, it's still mind blowing to me that all this is possible in a terminal.",
@@ -34,11 +44,6 @@
         "comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
         "source": "Reddit",
         "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
-      },
-      {
-        "comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
-        "source": "Reddit",
-        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzg0pt/?utm_source=share&utm_medium=web2x&context=3"
       },
       {
         "comment": "Thank you! This is perfect especially for my LaTeX and vimwiki workflows.",
@@ -84,11 +89,6 @@
         "comment": "Magic!",
         "source": "Reddit",
         "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg2t5jw/?utm_source=share&utm_medium=web2x&context=3"
-      },
-      {
-        "comment": "Sick!",
-        "source": "Reddit",
-        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg49w3q/?utm_source=share&utm_medium=web2x&context=3"
       }
     ]
   },
