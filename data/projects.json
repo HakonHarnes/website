@@ -9,7 +9,7 @@
     "description": [
       "PrintBuddy is a web application designed to streamline the 3D printing process. By aggregating and analyzing content from platforms like Printables and Thingiverse, PrintBuddy generates unique tips and settings for each model. From suggesting the optimal layer height and infill density to recommending the most suitable materials, the application offers actionable insights to improve print quality and efficiency. Additionally, it highlights potential challenges and offers solutions to common printing issues, ensuring users are well-prepared before initiating their projects.",
       "The application is built using modern technologies, including TypeScript, SvelteKit, and TailwindCSS for the frontend. The backend is developed using Python and FastAPI, leveraging both Anthropic's and OpenAI's models for analyzing the data. To ensure a reliable and responsive user experience, the frontend is deployed on Cloudflare Pages, while the backend runs on AWS Lambda.",
-      "PrintBuddy is currently in beta, with exciting new features and enhancements in the pipeline"
+      "PrintBuddy is currently in beta, with exciting new features in development."
     ],
     "website": "https://PrintBuddy.app"
   },
