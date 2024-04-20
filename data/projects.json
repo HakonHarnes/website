@@ -122,7 +122,7 @@
     "thumbnail": "/wasm.webp",
     "title": "emcc-obf",
     "technologies": ["Docker", "LLVM", "WebAssembly"],
-    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first (and only) compiler that is able to obfuscate WebAssembly. Based on the OLLVM project, built with Docker.",
+    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first compiler that is able to obfuscate WebAssembly.",
     "description": [
       "emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
     ],
