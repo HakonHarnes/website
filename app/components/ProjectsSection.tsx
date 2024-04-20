@@ -120,7 +120,7 @@ function ProjectLinks({ slug, github, website }: ProjectLinksProps) {
       </InternalLink>
       {website && (
         <ExternalLink underline={true} href={website} newTab>
-          Website
+          {website.replace("https://", "")}
         </ExternalLink>
       )}
       {github && (

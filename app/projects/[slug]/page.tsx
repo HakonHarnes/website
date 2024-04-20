@@ -82,9 +82,13 @@ function ProjectLinks({
   twitter?: string;
 }) {
   return (
-    <div className="flex w-full gap-2">
+    <div className="flex w-full gap-2 text-lg">
       <span className="text-slate-400">Links:</span>
-      {website && <ExternalLink href={website}>Website</ExternalLink>}
+      {website && (
+        <ExternalLink href={website}>
+          {website.replace("https://", "")}
+        </ExternalLink>
+      )}
       {github && <ExternalLink href={github}>GitHub</ExternalLink>}
       {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
       {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}
