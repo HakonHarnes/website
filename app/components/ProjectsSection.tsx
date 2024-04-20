@@ -30,13 +30,14 @@ function ProjectItem({
   technologies,
   abstract,
   github,
+  website,
 }: Project) {
   return (
     <div className="flex flex-col gap-4">
       <ProjectThumbnail thumbnail={thumbnail} slug={slug} />
       <ProjectDetails title={title} slug={slug} technologies={technologies} />
       <ProjectAbstract abstract={abstract} />
-      <ProjectLinks slug={slug} github={github} />
+      <ProjectLinks slug={slug} github={github} website={website} />
     </div>
   );
 }
@@ -108,14 +109,20 @@ function ProjectAbstract({ abstract }: ProjectDescriptionProps) {
 type ProjectLinksProps = {
   slug: string;
   github?: string;
+  website?: string;
 };
 
-function ProjectLinks({ slug, github }: ProjectLinksProps) {
+function ProjectLinks({ slug, github, website }: ProjectLinksProps) {
   return (
     <div className="flex gap-3 text-lg">
       <InternalLink underline={true} href={`projects/${slug}`}>
         Learn more
       </InternalLink>
+      {website && (
+        <ExternalLink underline={true} href={website} newTab>
+          Website
+        </ExternalLink>
+      )}
       {github && (
         <ExternalLink underline={true} href={github} newTab>
           GitHub
