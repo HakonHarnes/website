@@ -26,25 +26,37 @@ export default function AboutSection() {
             graduation date of June 2024.
           </p>
           <p>
-            Over the years, I’ve gained experience in a diverse set of
-            programming languages, with a particular focus on Python and backend
-            development. However, my interests extend to frontend development
-            and design, in addition to emerging technologies like WebAssembly. I
-            currently use Neovim as my editor of choice, on Arch Linux.
+            Throughout the years, I’ve gained experience in a diverse set of
+            programming languages. Python and backend development are my
+            specialties. That said, my interests extend to frontend development
+            and design, as evidenced by this website! I’ve daily driven Linux
+            for the last five years, so I know my way around the terminal. I
+            currently use Neovim as my editor of choice, on Arch Linux. I’ve
+            even written a popular{" "}
+            <InternalLink underline href="/projects/img-clip">
+              plugin
+            </InternalLink>{" "}
+            for Neovim!
           </p>
           <p>
-            Security is another interest of mine. I’ve identified and disclosed
-            critical vulnerabilities on a prominent website. On a related note,
-            did you know that websites might be secretly mining cryptocurrencies
-            on your computer without your consent? It’s a practice known as
-            cryptojacking, and I’ve actually published several peer-reviewed
-            papers on the subject! Check out the{" "}
+            Security is another interest of mine. I’ve successfully identified
+            and disclosed critical vulnerabilities that were present on a
+            well-known website. At university, I’ve assisted students in various
+            advanced topics like network protocols, reverse engineering, and
+            cryptography. Through my research, I’ve explored the hidden threat
+            of cryptojacking, where websites secretly use visitors’ computers to
+            mine cryptocurrencies. My findings have been published in several
+            peer-reviewed papers, which you can find in the{" "}
             <InternalLink underline href="#publications">
               publications
             </InternalLink>{" "}
-            section for more details.
+            section.
           </p>
-          <p>I am currently looking for new job opportunities.</p>
+          <p>
+            I am currently looking for new job opportunities. If you’d like to
+            discuss potential collaborations or have any questions, feel free to
+            connect with me.{" "}
+          </p>
           <MyLinks />
         </div>
         <div className="lg:w-72 lg:flex-shrink-0">
@@ -58,7 +70,7 @@ export default function AboutSection() {
 function MyLinks() {
   return (
     <div className="flex items-center gap-3">
-      <span className="text-lg text-slate-400 pt-0.5">Reach me at:</span>
+      <span className="text-lg text-slate-400 pt-0.5">Links:</span>
       <SocialLinks />
     </div>
   );
