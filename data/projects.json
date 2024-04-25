@@ -1,7 +1,7 @@
 [
   {
     "slug": "print-buddy",
-    "media": "/new-print-buddy.mp4",
+    "media": "/print-buddy.mp4",
     "thumbnail": "/print-buddy.webp",
     "title": "PrintBuddy",
     "technologies": ["SvelteKit", "FastAPI"],
