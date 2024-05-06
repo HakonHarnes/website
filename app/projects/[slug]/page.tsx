@@ -5,6 +5,7 @@ import Card from "@/components/Card";
 import CardList from "@/components/CardList";
 import Button from "@/components/Button";
 import ExternalLink from "@/components/ExternalLink";
+import InternalLink from "@/components/InternalLink";
 import projects from "@/data/projects.json";
 import { Project } from "@/types/Project";
 import { Feedback } from "@/types/Feedback";
@@ -93,6 +94,17 @@ function ProjectLinks({
       {youtube && <ExternalLink href={youtube}>YouTube</ExternalLink>}
       {twitter && <ExternalLink href={twitter}>Twitter</ExternalLink>}
     </div>
+  );
+}
+
+function ContactMe() {
+  return (
+    <p>
+      Email:{" "}
+      <InternalLink underline href="mailto:hakon@harnes.co">
+        hakon@harnes.co
+      </InternalLink>
+    </p>
   );
 }
 
@@ -203,6 +215,12 @@ function ProjectDescription({ description }: { description: string[] }) {
           {paragraph}
         </p>
       ))}
+      <p className="text-lg text-slate-400">
+        Does this project seem interesting? Send me an email at{" "}
+        <ExternalLink href="mailto:hakon@harnes.co">
+          hakon@harnes.co
+        </ExternalLink>
+      </p>
     </div>
   );
 }

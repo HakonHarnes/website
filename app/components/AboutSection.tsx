@@ -55,24 +55,20 @@ export default function AboutSection() {
           <p>
             I am currently looking for new job opportunities. If you’d like to
             discuss potential collaborations or have any questions, feel free to
-            connect with me.{" "}
+            connect with me.
           </p>
-          <MyLinks />
+          <p>
+            Email:{" "}
+            <InternalLink underline href="mailto:hakon@harnes.co">
+              hakon@harnes.co
+            </InternalLink>
+          </p>
         </div>
         <div className="lg:w-72 lg:flex-shrink-0">
           <Skills />
         </div>
       </div>
     </section>
-  );
-}
-
-function MyLinks() {
-  return (
-    <div className="flex items-center gap-3">
-      <span className="text-lg text-slate-400 pt-0.5">Links:</span>
-      <SocialLinks />
-    </div>
   );
 }
 
