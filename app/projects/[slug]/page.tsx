@@ -216,7 +216,7 @@ function ProjectDescription({ description }: { description: string[] }) {
         </p>
       ))}
       <p className="text-lg text-slate-400">
-        Does this project seem interesting? Send me an email at{" "}
+        Interesting project? Contact me at{" "}
         <ExternalLink href="mailto:hakon@harnes.co">
           hakon@harnes.co
         </ExternalLink>
