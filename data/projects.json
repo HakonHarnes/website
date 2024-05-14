@@ -1,8 +1,8 @@
 [
   {
     "slug": "print-buddy",
-    "media": "/print-buddy.mp4",
-    "thumbnail": "/print-buddy.webp",
+    "media": "/im-print-buddy.mp4",
+    "thumbnail": "/im-print-buddy.webp",
     "title": "PrintBuddy",
     "technologies": ["SvelteKit", "FastAPI"],
     "abstract": "Web application that suggests 3D printing tips and settings for platforms like Printables and Thingiverse. Leverages generative artificial intelligence. Currently in beta.",
