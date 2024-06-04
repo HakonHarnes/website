@@ -52,7 +52,7 @@ function ProjectThumbnail({ thumbnail, slug }: ProjectThumbnailProps) {
 
   return (
     <Link
-      href={`projects/${slug}`}
+      href={`/${slug}`}
       className="rounded-lg shadow-2xl outline outline-4 outline-slate-500 hover:outline-sky-500"
     >
       {isVideo ? (

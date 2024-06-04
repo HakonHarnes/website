@@ -33,7 +33,7 @@ export default function AboutSection() {
             for the last five years, so I know my way around the terminal. I
             currently use Neovim as my editor of choice, on Arch Linux. I’ve
             even written a popular{" "}
-            <InternalLink underline href="/projects/img-clip">
+            <InternalLink underline href="/img-clip">
               plugin
             </InternalLink>{" "}
             for Neovim!
