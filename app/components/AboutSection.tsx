@@ -22,8 +22,8 @@ export default function AboutSection() {
             programming. Fast forward to today, and I hold a Master’s degree in
             Computer Science from the Norwegian University of Science and
             Technology. I’m currently expanding my skill set at the University
-            of Tromsø, where I’m studying in management with an expected
-            graduation date of June 2024.
+            of Tromsø, where I’m studying in organizational leadership with an
+            expected graduation date of June 2024.
           </p>
           <p>
             Throughout the years, I’ve gained experience in a diverse set of
