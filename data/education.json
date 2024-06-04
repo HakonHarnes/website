@@ -1,0 +1,52 @@
+[
+  {
+    "university": "The Arctic University of Norway",
+    "degree": "Management",
+    "date": "Aug 2023 - Jun 2024",
+    "location": "Tromsø, Norway",
+    "courses": [
+      "Marketing",
+      "Recruitment",
+      "Project management",
+      "Organizational theory",
+      "Organizational psychology",
+      "Employment law",
+      "Contract law"
+    ]
+  },
+  {
+    "university": "Norwegian University of Science and Technology",
+    "degree": "Master of Science in Computer Science",
+    "date": "Aug 2021 - Jun 2023",
+    "location": "Trondheim, Norway",
+    "courses": [
+      "Parallel computing",
+      "Security and privacy",
+      "Cryptography and network security",
+      "Low-level programming",
+      "Computer design",
+      "Computer architecture",
+      "Visual computing",
+      "Visual communication"
+    ]
+  },
+  {
+    "university": "Norwegian University of Science and Technology",
+    "degree": "Bachelor of Science in Computer Science",
+    "date": "Aug 2018 - Jun 2021",
+    "location": "Trondheim, Norway",
+    "courses": [
+      "Machine learning",
+      "Operating systems",
+      "Databases",
+      "Web development",
+      "Systems engineering",
+      "Network programming",
+      "Network and software security",
+      "Algorithms and datastructures",
+      "Computer architecture",
+      "Mathematics",
+      "Statistics"
+    ]
+  }
+]

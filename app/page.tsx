@@ -5,6 +5,7 @@ import ExperienceSection from "./components/ExperienceSection";
 
 import "./globals.css";
 import PublicationsSection from "./components/PublicationsSection";
+import EducationSection from "./components/EducationSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <AboutSection />
       <ProjectsSection />
       <ExperienceSection />
+      <EducationSection />
       <PublicationsSection />
     </>
   );

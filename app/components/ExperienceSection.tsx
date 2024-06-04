@@ -27,11 +27,11 @@ function ExperienceItem({
   return (
     <div className="flex flex-col gap-1">
       <div className="flex justify-between gap-1">
-        <h2 className="text-2xl font-bold">{company}</h2>
+        <h2 className="text-2xl font-bold">{position}</h2>
         <span className="text-lg text-slate-400">{date}</span>
       </div>
       <div className="flex justify-between gap-1">
-        <h3 className="text-xl font-semibold text-sky-400">{position}</h3>
+        <h3 className="text-xl font-semibold text-sky-400">{company}</h3>
         <span className="text-lg text-slate-400">{location}</span>
       </div>
       <p className="my-2 text-lg text-slate-400">{description}</p>
