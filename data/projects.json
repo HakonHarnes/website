@@ -1,132 +1,147 @@
 [
-	{
-		"slug": "print-buddy",
-		"media": "/im-print-buddy.mp4",
-		"thumbnail": "/im-print-buddy.webp",
-		"title": "PrintBuddy",
-		"technologies": ["SvelteKit", "FastAPI"],
-		"abstract": "Web application that suggests 3D printing tips and settings for platforms like Printables and Thingiverse. Leverages generative artificial intelligence. Currently in beta.",
-		"description": [
-			"PrintBuddy is a web application designed to streamline the 3D printing process. By aggregating and analyzing content from platforms like Printables and Thingiverse, PrintBuddy generates unique tips and settings for each model. From suggesting the optimal layer height and infill density to recommending the most suitable materials, the application offers actionable insights to improve print quality and efficiency. Additionally, it highlights potential challenges and offers solutions to common printing issues, ensuring users are well-prepared before initiating their projects.",
-			"The application is built using modern technologies, including TypeScript, SvelteKit, and TailwindCSS for the frontend. The backend is developed using Python and FastAPI, leveraging both Anthropic's and OpenAI's models for analyzing the data. To ensure a reliable and responsive user experience, the frontend is deployed on Cloudflare Pages, while the backend runs on AWS Lambda."
-		],
-		"website": "https://PrintBuddy.app"
-	},
-	{
-		"slug": "img-clip",
-		"media": "/img-clip.mp4",
-		"thumbnail": "/img-clip.webp",
-		"title": "img-clip.nvim",
-		"technologies": ["Lua", "Bash", ".NET"],
-		"abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 1000 users and 450 stars on GitHub.",
-		"description": [
-			"Img-clip is a cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. One of the plugin's most notable features is its drag and drop functionality, allowing users to embed images by simply dragging them from their web browser or file explorer directly into the terminal. Additionally, img-clip provides a convenient way to paste images from the system clipboard, as well as integrations with external plugins through its powerful API.",
-			"The plugin's markup templates offer extensive customization options, enabling users to configure cursor positioning, figure labels, and auto-generated file names to suit their specific needs. Img-clip also supports multiple image embedding methods, including saving images as files, using URLs, or even embedding them as Base64-encoded data within the document itself. Images from the web are automatically downloaded and embedded into the document. Img-clip also provides advanced image processing capabilities, such as compression and resizing, enabling users to optimize their images before embedding them.",
-			"Since its release, img-clip has garnered significant recognition and support from the Neovim community, with over 1000 active users and more than 450 stars on GitHub. Its popularity even led to it being featured on the official Neovim Twitter account and showcased in a comprehensive, nearly hour-long video on YouTube. To learn more about img-clip and its capabilities, check out the links below."
-		],
-		"github": "https://github.com/hakonharnes/img-clip.nvim",
-		"youtube": "https://www.youtube.com/watch?v=4crDKASq9Nc",
-		"twitter": "https://twitter.com/Neovim/status/1742586883278864411",
-		"feedback": [
-			{
-				"comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzg0pt/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "Thank you for this amazing plugin, I could not believe how configurable it is, especially when I found out it even supports per project configs and dynamic templates!",
-				"source": "Email",
-				"url": ""
-			},
-			{
-				"comment": "That's amazing! Also synergizes great with 3rd/image.nvim, it's still mind blowing to me that all this is possible in a terminal.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzdorf/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "Thank you! This is perfect especially for my LaTeX and vimwiki workflows.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyt5tr/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "What kind of sorcery is this? Amazing.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg03nns/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "Great work, easy interface. Love it!",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kfu1t3h/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "This is amazing.",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyxvns/?utm_source=share&utm_medium=web2x&context=3",
-				"source": "Reddit"
-			},
-			{
-				"comment": "Looks awesome! +1 star for you.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kftlwp3/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "This is so cool!",
-				"source": "Twitter/X",
-				"url": "https://x.com/sudqijawabreh/status/1742621211975155973?s=20"
-			},
-			{
-				"comment": "Incredible work.",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyrm2q/?utm_source=share&utm_medium=web2x&context=3"
-			},
-			{
-				"comment": "This is cool.",
-				"source": "Twitter/X",
-				"url": "https://x.com/MeetGor21/status/1742587885747114079?s=20"
-			},
-			{
-				"comment": "Magic!",
-				"source": "Reddit",
-				"url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg2t5jw/?utm_source=share&utm_medium=web2x&context=3"
-			}
-		]
-	},
-	{
-		"slug": "website",
-		"media": "/website.webp",
-		"thumbnail": "/website.webp",
-		"title": "Website",
-		"technologies": ["TypeScript", "Next.js", "Tailwind"],
-		"abstract": "Personal website built with modern web technologies, showcasing my projects, skills and experience.",
-		"description": [
-			"Personal website is built using modern web technologies like TypeScript, Next.js, and Tailwind CSS. It features a clean and responsive design, allowing visitors to see my projects and experience, learn about my skills, and get in touch with me. The terminal is a custom component that's animated using the react-typed library."
-		],
-		"github": "https://github.com/hakonharnes/website"
-	},
-	{
-		"slug": "emcc-obf",
-		"media": "/wasm.webp",
-		"thumbnail": "/wasm.webp",
-		"title": "emcc-obf",
-		"technologies": ["Docker", "LLVM", "WebAssembly"],
-		"abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first compiler that is able to obfuscate WebAssembly.",
-		"description": [
-			"emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
-		],
-		"github": "https://github.com/hakonharnes/emcc-obf"
-	}
+  {
+    "slug": "print-buddy",
+    "media": "/im-print-buddy.mp4",
+    "thumbnail": "/im-print-buddy.webp",
+    "title": "PrintBuddy",
+    "technologies": [
+      "SvelteKit",
+      "FastAPI"
+    ],
+    "abstract": "Web application that suggests 3D printing tips and settings for platforms like Printables and Thingiverse. Leverages generative artificial intelligence. Currently in beta.",
+    "description": [
+      "PrintBuddy is a web application designed to streamline the 3D printing process. By aggregating and analyzing content from platforms like Printables and Thingiverse, PrintBuddy generates unique tips and settings for each model. From suggesting the optimal layer height and infill density to recommending the most suitable materials, the application offers actionable insights to improve print quality and efficiency. Additionally, it highlights potential challenges and offers solutions to common printing issues, ensuring users are well-prepared before initiating their projects.",
+      "The application is built using modern technologies, including TypeScript, SvelteKit, and TailwindCSS for the frontend. The backend is developed using Python and FastAPI, leveraging both Anthropic's and OpenAI's models for analyzing the data. To ensure a reliable and responsive user experience, the frontend is deployed on Cloudflare Pages, while the backend runs on AWS Lambda."
+    ],
+    "website": "https://PrintBuddy.app"
+  },
+  {
+    "slug": "img-clip",
+    "media": "/img-clip.mp4",
+    "thumbnail": "/img-clip.webp",
+    "title": "img-clip.nvim",
+    "technologies": [
+      "Lua",
+      "Bash",
+      ".NET"
+    ],
+    "abstract": "Cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. Endorsed by the community with over 5000 users and 550 stars on GitHub.",
+    "description": [
+      "Img-clip is a cross-platform Neovim plugin for embedding images into markup languages like LaTeX, Markdown and Typst. One of the plugin's most notable features is its drag and drop functionality, allowing users to embed images by simply dragging them from their web browser or file explorer directly into the terminal. Additionally, img-clip provides a convenient way to paste images from the system clipboard, as well as integrations with external plugins through its powerful API.",
+      "The plugin's markup templates offer extensive customization options, enabling users to configure cursor positioning, figure labels, and auto-generated file names to suit their specific needs. Img-clip also supports multiple image embedding methods, including saving images as files, using URLs, or even embedding them as Base64-encoded data within the document itself. Images from the web are automatically downloaded and embedded into the document. Img-clip also provides advanced image processing capabilities, such as compression and resizing, enabling users to optimize their images before embedding them.",
+      "Since its release, img-clip has garnered significant recognition and support from the Neovim community, with over 5000 active users and more than 550 stars on GitHub. Its popularity even led to it being featured on the official Neovim Twitter account and showcased in a comprehensive, nearly hour-long video on YouTube. To learn more about img-clip and its capabilities, check out the links below."
+    ],
+    "github": "https://github.com/hakonharnes/img-clip.nvim",
+    "youtube": "https://www.youtube.com/watch?v=4crDKASq9Nc",
+    "twitter": "https://twitter.com/Neovim/status/1742586883278864411",
+    "feedback": [
+      {
+        "comment": "Thanks. These plugins are completely indispensible for fast writing of technical notes.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyontg/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Huge, working with images was one of the biggest drawbacks of neovim for me. Thanks for your work!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyqixa/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This seems too good to be true. Amazing work btw. I am in awe of this work.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzg0pt/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Thank you for this amazing plugin, I could not believe how configurable it is, especially when I found out it even supports per project configs and dynamic templates!",
+        "source": "Email",
+        "url": ""
+      },
+      {
+        "comment": "That's amazing! Also synergizes great with 3rd/image.nvim, it's still mind blowing to me that all this is possible in a terminal.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfzdorf/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Dang. I used to go through the pain of manually copy pasting screenshots while making notes in neovim. Thanks a ton man.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kcrjqnk/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Thank you! This is perfect especially for my LaTeX and vimwiki workflows.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyt5tr/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "What kind of sorcery is this? Amazing.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg03nns/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "Great work, easy interface. Love it!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kfu1t3h/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is amazing.",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyxvns/?utm_source=share&utm_medium=web2x&context=3",
+        "source": "Reddit"
+      },
+      {
+        "comment": "Looks awesome! +1 star for you.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18f2t2o/comment/kftlwp3/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is so cool!",
+        "source": "Twitter/X",
+        "url": "https://x.com/sudqijawabreh/status/1742621211975155973?s=20"
+      },
+      {
+        "comment": "Incredible work.",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kfyrm2q/?utm_source=share&utm_medium=web2x&context=3"
+      },
+      {
+        "comment": "This is cool.",
+        "source": "Twitter/X",
+        "url": "https://x.com/MeetGor21/status/1742587885747114079?s=20"
+      },
+      {
+        "comment": "Magic!",
+        "source": "Reddit",
+        "url": "https://www.reddit.com/r/neovim/comments/18wme39/comment/kg2t5jw/?utm_source=share&utm_medium=web2x&context=3"
+      }
+    ]
+  },
+  {
+    "slug": "website",
+    "media": "/website.webp",
+    "thumbnail": "/website.webp",
+    "title": "Website",
+    "technologies": [
+      "TypeScript",
+      "Next.js",
+      "Tailwind"
+    ],
+    "abstract": "Personal website built with modern web technologies, showcasing my projects, skills and experience.",
+    "description": [
+      "Personal website is built using modern web technologies like TypeScript, Next.js, and Tailwind CSS. It features a clean and responsive design, allowing visitors to see my projects and experience, learn about my skills, and get in touch with me. The terminal is a custom component that's animated using the react-typed library."
+    ],
+    "github": "https://github.com/hakonharnes/website"
+  },
+  {
+    "slug": "emcc-obf",
+    "media": "/wasm.webp",
+    "thumbnail": "/wasm.webp",
+    "title": "emcc-obf",
+    "technologies": [
+      "Docker",
+      "LLVM",
+      "WebAssembly"
+    ],
+    "abstract": "Modified Emscripten compiler with LLVM-level obfuscation. This is the first compiler that is able to obfuscate WebAssembly.",
+    "description": [
+      "emcc-obf is a modified Emscripten compiler with LLVM-level obfuscation. It is, to date, the first (and only) compiler that is able to obfuscate WebAssembly, the fourth language of the web. emcc-obf was used in my master's thesis for investigating the feasability of WebAssembly obfuscation for evading crypto mining detection. It was found to be able to evade detection with little overhead. The compiler is based on the obfuscator-LLVM project, and it's built with Docker."
+    ],
+    "github": "https://github.com/hakonharnes/emcc-obf"
+  }
 ]
